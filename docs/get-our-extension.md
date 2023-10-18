@@ -1,19 +1,12 @@
 ---
-slug: '/'
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# Overview
+# Get our extension
 
-## Generate a new site
+Let's discover **Docusaurus in less than 5 minutes**.
 
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
+Varius sit amet mattis vulputate enim nulla aliquet porttitor lacus. Pharetra convallis posuere morbi leo urna molestie at elementum. Orci ac auctor augue mauris augue neque. Magna eget est lorem ipsum dolor sit amet consectetur. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Suspendisse sed nisi lacus sed. Consectetur libero id faucibus nisl tincidunt eget nullam non. A cras semper auctor neque vitae. Mauris cursus mattis molestie a iaculis at. Nulla facilisi cras fermentum odio eu. Euismod quis viverra nibh cras pulvinar mattis nunc sed.
 
 ## Getting Started
 
@@ -28,9 +21,15 @@ Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new
 
 Varius sit amet mattis vulputate enim nulla aliquet porttitor lacus. Pharetra convallis posuere morbi leo urna molestie at elementum. Orci ac auctor augue mauris augue neque. Magna eget est lorem ipsum dolor sit amet consectetur. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Suspendisse sed nisi lacus sed. Consectetur libero id faucibus nisl tincidunt eget nullam non. A cras semper auctor neque vitae. Mauris cursus mattis molestie a iaculis at. Nulla facilisi cras fermentum odio eu. Euismod quis viverra nibh cras pulvinar mattis nunc sed.
 
-Let's discover **Docusaurus in less than 5 minutes**.
+## Generate a new site
 
-Varius sit amet mattis vulputate enim nulla aliquet porttitor lacus. Pharetra convallis posuere morbi leo urna molestie at elementum. Orci ac auctor augue mauris augue neque. Magna eget est lorem ipsum dolor sit amet consectetur. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Suspendisse sed nisi lacus sed. Consectetur libero id faucibus nisl tincidunt eget nullam non. A cras semper auctor neque vitae. Mauris cursus mattis molestie a iaculis at. Nulla facilisi cras fermentum odio eu. Euismod quis viverra nibh cras pulvinar mattis nunc sed.
+Generate a new Docusaurus site using the **classic template**.
+
+The classic template will automatically be added to your project after you run the command:
+
+```bash
+npm init docusaurus@latest my-website classic
+```
 
 You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
 
