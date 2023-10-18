@@ -57,8 +57,8 @@ const config = {
       navbar: {
         title: 'Business Central AddOns by Fusion5 Business Solutions',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Fusion5 Business Solutions',
+          src: 'img/logo.png',
         },
         items: [
           {
