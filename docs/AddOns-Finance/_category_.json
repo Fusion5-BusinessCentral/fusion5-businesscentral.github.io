@@ -4,5 +4,6 @@
   "link": {
     "type": "generated-index",
     "description": "Find out our extensions for Finance"
-  }
+  },
+  "className": "nav-top-level"
 }
