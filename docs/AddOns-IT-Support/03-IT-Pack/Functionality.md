@@ -45,8 +45,8 @@ sidebar_class_name: 'nav-det-level'
 - When the job queue is run, it groups all failed entries since the last run and sends them in one email.
 
 ### Data Deletion/Update Tool
-- <font color=red>Very powerful tool! It can cause data inconsistency if not used wisely.</font>
-- New page **Data Deletion/Update Tool**
+- Very powerful tool! It can cause data inconsistency if not used wisely.
+- Added a page **Data Deletion/Update Tool**
   - User must have SUPER permission set assigned and this tool enabled in the **User Setup** in **Allow Deletion-Update Tool** (field is hidden by default)
   - The tool has two modes - Update and Delete. The delete removes records from specified tables based on configured filters; the update changes the field value for specified fields and records.
   **Commit after number of processed records** specifies how often the changes should be permanently stored in the database. Be aware that once the record is committed, it's not rollbacked even if there are errors later. Example: **Commit after number of processed records = 5**; if there is an error with record no. 4, nothing is stored in the database; if there is an error with record no. 7, the first 5 changed records are stored updated, and the rest of the record is not updated.
