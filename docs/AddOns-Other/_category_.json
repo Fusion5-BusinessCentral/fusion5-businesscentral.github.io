@@ -1,0 +1,9 @@
+{
+  "label": "AddOns: Others",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Find out our other extensions that do not belong to any of the categories above."
+  },
+  "className": "nav-top-level"
+}
