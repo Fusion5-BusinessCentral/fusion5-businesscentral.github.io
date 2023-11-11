@@ -6,6 +6,10 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
  
+## [2.0.0] - 2023-11-11
+  
+Internal release for BC 2023 wave 2 (namespaces, minor refactoring)
+
 ## [1.12.0] - 2023-10-27
   
 First App-Source version
