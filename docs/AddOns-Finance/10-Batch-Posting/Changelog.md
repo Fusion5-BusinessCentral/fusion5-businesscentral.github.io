@@ -6,6 +6,10 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
  
+## [1.3.0.0] - 2023-11-15
+  
+Internal release (licensing changes)
+
 ## [1.2.0.0] - 2023-11-06
   
 First App-Source version

@@ -6,6 +6,13 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
  
+## [1.5.0.0] - 2023-11-15
+  
+Minor changes
+- FS5A08LineDiscountAmount column available for Sales Quote, Order, Posted Invoice and Posted Credit Note reports.
+- FS5A08TaxAmount formatted.
+- Licensing changes.
+
 ## [1.4.0.0] - 2023-10-28
   
 First App-Source version
