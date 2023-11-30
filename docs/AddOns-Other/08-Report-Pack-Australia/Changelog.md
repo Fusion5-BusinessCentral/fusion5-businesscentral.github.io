@@ -6,6 +6,15 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
  
+## [1.6.0.0] - 2023-11-20
+  
+Changes
+- New custom layouts
+  - Purchase - Return Shipment
+  - Transfer Shipment
+- Copy Document Comment Lines Functionality
+- FS5A08LineNetWeight column available for Sales - Standard Shipment
+
 ## [1.5.0.0] - 2023-11-15
   
 Minor changes

@@ -9,6 +9,10 @@ sidebar_class_name: 'nav-det-level'
 
 A new action **Send Customer Payment Receipt** in **Customer Ledger Entries** allows sending configured Customer Payment Receipt. The process uses the standard email functionality with a custom email scenario.
 
+## Copy Document Comment Lines
+
+Copy documents functionality for sales and purchase documents has been extended by the "Include Comments" option. If this option is active, the document is copied, including records in "Sales Comment Line" and "Purchase Comment Line".
+
 ## New Reports
 
 - Customer Statement (Fusion5), report 71697660
@@ -23,27 +27,47 @@ A new action **Send Customer Payment Receipt** in **Customer Ledger Entries** al
 
 The following reports have custom fields and data items available, so even when our custom report layouts do not have all values you require, there is a chance the field is still available and you need only to update the custom layout!
 
-- Remittance Advice - Entries
+### Sales
+
 - Standard Sales - Quote
 - Standard Sales - Order Confirmation
 - Standard Sales - Invoice
 - Standard Sales - Shipment
 - Standard Sales - Credit Memo
+
+### Purchase
+
 - Standard Purchase - Order
+- Purchase - Return Shipment
+- Remittance Advice - Entries
+
+### Inventory
+
+- Transfer Shipment
 
 ## Custom Report Layouts
 
 The following reports have custom layout(s) specifically made for Australia.
 
+### Sales
+
 - Standard Sales - Quote
 - Standard Sales - Order Confirmation
 - Standard Sales - Invoice
 - Standard Sales - Shipment
 - Standard Sales - Credit Memo
-- Standard Purchase - Order
-- Remittance Advice - Entries
 - Customer Statement (Fusion5)
 - Customer - Payment Receipt (Fusion5)
+
+### Purchase
+
+- Standard Purchase - Order
+- Purchase - Return Shipment
+- Remittance Advice - Entries
+
+### Inventory
+
+- Transfer Shipment
 
 ## Setup
 
