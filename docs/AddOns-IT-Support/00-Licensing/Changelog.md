@@ -6,6 +6,16 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
  
+## [2.2.0] - 2023-12-07
+
+Changes
+- New public procedure UnregisterExtension() in LicensingManagement codeunit. Use this procedure to remove registration of the extension from the licensing module.
+
+## [2.1.0] - 2023-11-20
+
+Changes
+- New public procedure UnregisterExtension() in LicensingManagement codeunit. Use this procedure to remove registration of the extension from the licensing module.
+
 ## [2.0.0] - 2023-11-11
   
 Internal release for BC 2023 wave 2 (namespaces, minor refactoring)
