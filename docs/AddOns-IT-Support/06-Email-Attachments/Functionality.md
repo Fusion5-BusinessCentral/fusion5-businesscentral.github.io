@@ -7,7 +7,14 @@ sidebar_class_name: 'nav-det-level'
 
 This extension allows you to attach document attachments to emails sent from Business Central automatically. Only marked attachments are attached to the email. To mark an attachment, go to **Document Attachment Details** (the page where you can attach attachments) and set **Attach to Emails** to Yes.
 
+With this addon, you will also be able to add attachments to Customer and Vendor Ledger Entries. It is also possible to automatically copy document attachments from unposted document (sales and purchase) to customer and vendor ledger entry.
+
 ## Setup
+
+New field in **Sales & Receivables Setup** (**Purchases & Payables Setup**)
+- **Copy Doc. Attachments to Customer Ledger Entries** (**Copy Doc. Attachments to Vendor Ledger Entries**)
+  - Specifies whether document attachments should be automatically copied to customer/vendor ledger entries when the source document is posted. 
+  - The default value is false (= documents are copied to posted document only).
 
 Two new fields in **General Ledger Setup**, tab **Email Attachments**
 
