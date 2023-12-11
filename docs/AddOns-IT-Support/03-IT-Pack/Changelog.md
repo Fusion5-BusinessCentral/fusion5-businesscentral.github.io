@@ -8,6 +8,8 @@ All notable changes to this project will be documented in this file.
  
 ## [1.3.0.0] - 2023-10-27
   
+Available version: 22.0+
+
 First App-Source version
 
 <!--  

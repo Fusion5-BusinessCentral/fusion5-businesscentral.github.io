@@ -8,6 +8,8 @@ All notable changes to this project will be documented in this file.
  
 ## [2.2.0] - 2023-12-07
 
+Available version: 23.0+
+
 Changes
 - New overload for RegisterExtension() procedure to allow registration without any supporting documents (email, documentation, licensing guidelines).
 - Email is no longer mandatory to register new extensions.
@@ -15,15 +17,21 @@ Changes
 
 ## [2.1.0] - 2023-11-20
 
+Available version: 23.0+
+
 Changes
 - New procedure UnregisterExtension() in LicensingManagement codeunit. Use this procedure to remove registration of the extension from the licensing module.
 
 ## [2.0.0] - 2023-11-11
   
+Available version: 23.0+
+
 Internal release for BC 2023 wave 2 (namespaces, minor refactoring)
 
 ## [1.12.0] - 2023-10-27
   
+Available version: 22.0+
+
 First App-Source version
 
 <!--  

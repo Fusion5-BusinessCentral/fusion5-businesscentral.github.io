@@ -8,6 +8,8 @@ All notable changes to this project will be documented in this file.
  
 ## [1.6.0.0] - 2023-11-20
   
+Available version: 22.0+
+
 Changes
 - New custom layouts
   - Purchase - Return Shipment
@@ -17,6 +19,8 @@ Changes
 
 ## [1.5.0.0] - 2023-11-15
   
+Available version: 22.0+
+
 Minor changes
 - FS5A08LineDiscountAmount column available for Sales Quote, Order, Posted Invoice and Posted Credit Note reports.
 - FS5A08TaxAmount formatted.
@@ -24,6 +28,8 @@ Minor changes
 
 ## [1.4.0.0] - 2023-10-28
   
+Available version: 22.0+
+
 First App-Source version
 
 <!--  

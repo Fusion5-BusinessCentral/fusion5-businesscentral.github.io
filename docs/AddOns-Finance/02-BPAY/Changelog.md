@@ -8,10 +8,14 @@ All notable changes to this project will be documented in this file.
  
 ## [1.2.0.0] - 2023-11-15
   
+Available version: 22.0+
+
 Internal release (licensing changes)
 
 ## [1.1.0.0] - 2023-10-28
   
+Available version: 22.0+
+
 First App-Source version
 
 <!--  
