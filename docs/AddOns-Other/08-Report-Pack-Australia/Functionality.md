@@ -13,6 +13,19 @@ A new action **Send Customer Payment Receipt** in **Customer Ledger Entries** al
 
 Copy documents functionality for sales and purchase documents has been extended by the "Include Comments" option. If this option is active, the document is copied, including records in "Sales Comment Line" and "Purchase Comment Line".
 
+## Trading Names
+
+
+The following reports support trading name functionality:
+- Standard Purchase - Order
+- Standard Sales - Credit Memo
+- Standard Sales - Invoice
+- Standard Sales - Order Confirmation
+- Standard Sales - Quote
+- Standard Sales - Shipment
+- Customer - Payment Receipt (Fusion5)
+- Customer Statement (Fusion5)
+
 ## New Reports
 
 - Customer Statement (Fusion5), report 71697660

@@ -6,6 +6,22 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
  
+## [2.0.0.0] - 2023-12-15
+  
+Available version: 23.0+
+
+Changes
+- Trading Names functionality
+- Trading Names support for the following reports:
+  - Standard Purchase - Order
+  - Standard Sales - Credit Memo
+  - Standard Sales - Invoice
+  - Standard Sales - Order Confirmation
+  - Standard Sales - Quote
+  - Standard Sales - Shipment
+  - Customer - Payment Receipt (Fusion5)
+  - Customer Statement (Fusion5)
+
 ## [1.6.0.0] - 2023-11-20
   
 Available version: 22.0+
