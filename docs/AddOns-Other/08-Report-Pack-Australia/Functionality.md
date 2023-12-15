@@ -15,6 +15,11 @@ Copy documents functionality for sales and purchase documents has been extended 
 
 ## Trading Names
 
+**Trading Names** allow to define of multiple names (and addresses) for the Company. These addresses can be selected on the Customer and Vendor card and are automatically transferred to newly created documents (where they can be changed or removed).
+
+If the supported document with the trading name is printed, the trading name identifications are printed instead of the company name. When the **Trading Name** is specified, all information from the **General** tab is used instead of information from the Company Information record. However, fields in the **Communication** tab are used only when they have a value; otherwise, the value from the company information is used.
+
+![image.png](./img/Trading-Names.png)
 
 The following reports support trading name functionality:
 - Standard Purchase - Order
