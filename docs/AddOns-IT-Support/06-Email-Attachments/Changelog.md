@@ -6,6 +6,14 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
   
+## [1.2.1.0] - 2023-12-12
+
+Available version: 22.2+
+
+Changes
+- Hotfix for Vendor Ledger Entries attachment factbox.
+- Attachment actions in Vendor and Customer Ledger Entries.
+
 ## [1.2.0.0] - 2023-12-11
   
 Available version: 22.2+
