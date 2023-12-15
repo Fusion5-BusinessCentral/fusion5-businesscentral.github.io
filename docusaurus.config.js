@@ -9,6 +9,7 @@ const config = {
   title: 'Business Central AddOns by Fusion5 Business Solutions',
   tagline: 'Extensions for Microsoft Dynamics 365 Business Central.',
   favicon: 'img/favicon.ico',
+  trailingSlash: true,
 
   // Set the production url of your site here
   url: 'https://fusion5-businesscentral.github.io',
