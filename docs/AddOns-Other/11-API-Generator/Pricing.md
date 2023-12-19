@@ -4,9 +4,12 @@ sidebar_class_name: 'nav-det-level'
 ---
 
 # Pricing
-<!-- 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+This page provides the details of the cost and licensing of each extension. You can use it in both Sandbox and Production environments, depending on your needs. However, the trial mode has some limitations: you can only create up to 2 API pages with 5 fields in total. If you want to unlock the full potential of our extension, you need to get a license.
+
+To get a license, please [contact us through the form on our website](https://www.fusion5.com.au/contact-us/). We will get back to you with a quote and the steps to activate your license.
+
+<!-- 
 ## Monthly Fee
 
 | Version          | Limitations        | Price (AUD)       |
