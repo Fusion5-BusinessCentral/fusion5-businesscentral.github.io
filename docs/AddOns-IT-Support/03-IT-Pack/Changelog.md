@@ -6,9 +6,19 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
  
+## [1.4.0.0] - 2023-12-18
+  
+Available version: 22.2+
+
+### Changes
+- Table Relation functuonality
+
+### Fixes
+- REST Authentication: Remove applied filters when new record is created (otherwise the new record can dissapear if not within filter conditions)
+
 ## [1.3.0.0] - 2023-10-27
   
-Available version: 22.0+
+Available version: 22.2+
 
 First App-Source version
 

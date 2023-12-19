@@ -62,6 +62,13 @@ sidebar_class_name: 'nav-det-level'
 
    ![image.png](./img/Import-Attachments.png)
 
+### Table Relations
+- Table relations is a new functionality that can help developers of other extensions create relations between different records from different tables.
+- **Target Table No.** and **Source Table No.** specifies for which tables the relation should be created.
+- In Line section, the **Target Field No.** and **Source Field No.** (only when the **Relation Type** is set to **Field**) specifies which fields creates the relation. The **Relation Type** **Filter** allows to create a static condition based on the value of the **Target Field No.**.
+
+   ![image.png](./img/Table2Table-Relation.png)
+
 --
 
 ## For developers
