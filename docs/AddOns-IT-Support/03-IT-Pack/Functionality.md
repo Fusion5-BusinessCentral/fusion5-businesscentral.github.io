@@ -107,3 +107,11 @@ There are new helpers available for our projects that make some tasks simpler.
 
 ### Codeunit 71697628 "FS5A03 Item Tracking Helper"
 - Use this codeunit if you need to create item tracking manually.
+
+### Page 71697637 "FS5A03 Big Text Editor"
+- This is a special page with a custom control add-in, "FS5A03 Big Text Editor. " It has one extra-large text field that covers a whole page.
+- It is also possible to use directly controladdin "FS5A03 Big Text Editor"; however, there are some limitations on how the field can be used on existing pages, especially if the page has other fields. The recommendation is always to use page 71697637 and open the editor as a new page.
+- There are three public methods. Use these procedures to set/get the text value from the field or to set the page caption.
+  - SetText(NewText: Text)
+  - SetName(NewName: Text)
+  - GetText(): Text

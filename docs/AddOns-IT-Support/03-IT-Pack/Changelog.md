@@ -6,6 +6,14 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
  
+## [2.0.0.0] - 2024-01-24
+  
+Available version: 23.0+
+
+### Changes
+- Page 71697637 "FS5A03 Big Text Editor"
+- Internal changes for BC 2023 wave 2 (namespaces, minor refactoring)
+
 ## [1.4.0.0] - 2023-12-18
   
 Available version: 22.2+
