@@ -6,6 +6,20 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
  
+## [2.1.0.0] - 2024-01-31
+  
+Available version: 23.0+
+
+### Changes
+- "Table Relations" now contains information about the extension from which the relation comes (if an extension created the relation).
+- New codeunit 71697637 "FS5A03 Table Relation Mgt.", a facade for creating table relation programmatically from another extension.
+  - CreateTableRelation(Code: Code[20]; SourceTableNo: Integer; TargetTableNo: Integer) TableRelation: Record "FS5A03 Table Relation"
+  - CreateTableRelationLineFilter(TableRelation: Record "FS5A03 Table Relation"; TargetFieldNo: Integer; TargetFieldFilter: Text[100])
+  - CreateTableRelationLineField(TableRelation: Record "FS5A03 Table Relation"; TargetFieldNo: Integer; SourceFieldNo: Integer)
+
+### Fixes
+- Fix for "FS5A03 Big Text Editor" addin for older browsers
+
 ## [2.0.0.0] - 2024-01-24
   
 Available version: 23.0+

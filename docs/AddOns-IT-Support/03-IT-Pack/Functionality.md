@@ -69,6 +69,11 @@ sidebar_class_name: 'nav-det-level'
 
    ![image.png](./img/Table2Table-Relation.png)
 
+- A codeunit **71697637 "FS5A03 Table Relation Mgt."**, a facade for creating table relation programmatically from another extension.
+  - **CreateTableRelation(Code: Code[20]; SourceTableNo: Integer; TargetTableNo: Integer) TableRelation: Record "FS5A03 Table Relation"**
+  - **CreateTableRelationLineFilter(TableRelation: Record "FS5A03 Table Relation"; TargetFieldNo: Integer; TargetFieldFilter: Text[100])**
+  - **CreateTableRelationLineField(TableRelation: Record "FS5A03 Table Relation"; TargetFieldNo: Integer; SourceFieldNo: Integer)**
+
 --
 
 ## For developers
