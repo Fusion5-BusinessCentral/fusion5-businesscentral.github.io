@@ -1,0 +1,9 @@
+{
+  "label": "AddOns: Power Automate",
+  "position": 50,
+  "link": {
+    "type": "generated-index",
+    "description": "Find out how to use Power Automate to automate your business processes."
+  },
+  "className": "nav-top-level"
+}

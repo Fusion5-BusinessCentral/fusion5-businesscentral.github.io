@@ -5,6 +5,8 @@ sidebar_class_name: 'nav-det-level'
 
 # Functionality
 
+**<span style="color:red">This AddOn is no longer maintained. Use our [Pack for Power Automate](../../AddOns-Power-Automate/07-Pack-for-Power-Automate/Functionality.md) and standalone workflow addons instead!</span>**
+
 ## How to use
 
 ### Vendor Bank Account Approval
