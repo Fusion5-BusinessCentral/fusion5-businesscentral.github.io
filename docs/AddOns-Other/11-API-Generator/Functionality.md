@@ -63,3 +63,39 @@ Specify any condition in the line section (all lines have AND condition automati
 
 ![image.png](./img/Table2Table-Relation.png)
 
+### Export API Extension
+
+To export the API extension, use the action **Generate** and follow the steps.
+
+#### Install and Configure Visual Studio Code
+
+This step must be done only once (after the first export).
+
+1) Download VS Code from [https://code.visualstudio.com/](https://code.visualstudio.com/).
+1) Install the VS Code using the installation wizard downloaded in previous step.
+1) Once installed, open the VS Code.
+1) From the left menu, choose **Extensions**.
+1) Find and Install **AL Language extension for Microsoft Dynamics 365 Business Central** extension.
+1) Close and reopen the VS Code.
+
+#### Build the extension
+
+In this step, you will generate the app file that can be installed into your Business Central environment.
+
+1) Download the project ZIP file from your Business Central using the action **Generate**.
+1) Open VS Code.
+1) Extract the downloaded ZIP file.
+1) Open the extracted folder in VS Code (**File -> Open Folder**).
+1) Download Business Central symbols (**View -> Command Pallete -> AL: Donwload Symbols**).
+1) Build and create the .app file (**View -> Command Pallete -> AL: Package**).
+
+#### Deploy the extension
+
+In this step, you will deploy created app to your Business Central environment. Deploying extensions may cause system errors to all logged users hence it is recommended to do this step outside of your business hours to minimaze the impact on other users.
+
+1) Open your Business Central environment.
+1) Open page **Extension Management**.
+1) Use action **Manage -> Upload Extension**.
+1) Locate the .app file, accept the privacy policy and use the **Deploy** action.
+1) See the installation status under **Installation Status**. The API pages will be available once the installation is completed.
+
