@@ -6,6 +6,24 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
  
+## [2.3.0] - 2024-03-04
+
+Available version: 23.0+
+
+Changes
+- New action "Refresh License" in "Existing Licenses" to force update BC license details (for example to force update the license after it was upgraded to higher license level).
+- Change how the active users are counted
+  - For OnPrem, all users with State = Enabled are considered as active.
+  - For Cloud, only users with specific plans are considered as active. If the user has only one or more of the following plans, it is not counted towards the limit.
+    - Global Admin
+    - D365 Admin
+    - D365 Admin Partner
+    - Delegated Admin
+    - Helpdesk
+    - Accountant Hub
+    - Microsoft 365
+- SecretText uptake preparation for v24 release.
+
 ## [2.2.0] - 2023-12-07
 
 Available version: 23.0+

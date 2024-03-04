@@ -31,9 +31,21 @@ There are two main pages in this extension, **Licensable Extensions** and **Exis
 ![image.png](./img/Existing-Licenses.png)
 
 - From this page, users can also add a new license key using the action **Add New License Key**. 
+- Users can also **Refresh License** to update the local license details, for example when the license key is upgraded to higher license level.
 - The license keys, as well as all other license tables, are shared across all environment companies. This means that if the license allows only a specified number of companies, the client must manage the total number of existing companies and remove the companies that are over this limit or extend the license limits.
 
 ![image.png](./img/Add-New-License_Key.png)
+
+### User Limits
+
+If the extension limits number of the users that may use the extension, only users with plans different from the plans below are considered.
+- Global Admin
+- D365 Admin
+- D365 Admin Partner
+- Delegated Admin
+- Helpdesk
+- Accountant Hub
+- Microsoft 365
 
 ## For developers
 
