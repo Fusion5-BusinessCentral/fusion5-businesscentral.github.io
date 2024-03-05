@@ -35,18 +35,3 @@ Obsoleted Functions (will be removed in 25.0)
 Available version: 23.0+
 
 First App-Source version based on our legacy Pack for Power Automate
-
-<!--  
-### Added
- 
-### Changed
-  
-- [PROJECTNAME-ZZZZ](http://tickets.projectname.com/browse/PROJECTNAME-ZZZZ)
-  PATCH Drupal.org is now used for composer.
- 
-### Fixed
- 
-- [PROJECTNAME-TTTT](http://tickets.projectname.com/browse/PROJECTNAME-TTTT)
-  PATCH Add logic to runsheet teaser delete to delete corresponding
-  schedule cards.
--->
