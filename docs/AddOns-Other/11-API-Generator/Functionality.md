@@ -38,12 +38,20 @@ This section allows you to define all API pages. Every API page is based on the 
   - Specifies connection between parent and child table.
 - **Change Tracking Allowed**
   - Sets a value that indicates whether the entity exposed through the OData API supports change tracking.
+- **API URL**
+  - Shows expected API URL once the API pages are deployed to the environment.
 
 ### Table Fields
 
 Every API Page must have at least one field. To define a field, select the table, choose the action **Fields** and choose all fields that should be included on the API page.
 
 ![image.png](./img/Table-Fields.png)
+
+You can use the action **Add Multiple** to add multiple fields at once.
+
+System will not allow the following fields to be used on API page:
+- Fields with ObsoleteState = Removed.
+- Fields with the following data types: Binary, BLOB, Media, MediaSet, OemCode, OemText, RecordID, TableFilter
 
 ### Source Table View
 
