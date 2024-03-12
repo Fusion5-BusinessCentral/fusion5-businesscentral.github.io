@@ -14,16 +14,17 @@ Must be enabled in **Power Automate Flows**.
 ![image.png](./img/Enable-Flow.png)
 
 - New fields **Approval Status** added to **Vendor Bank Accounts**. If empty, the record is not approved nor sent for approval. Available statuses: **Approval Required**, **Pending Approval**, **Approved**, **Rejected**.
-- New action **Send Approval Request** to **Vendor Bank Accounts** that emits **Vendor Bank Account Approval Requested** business event that can be consumed from Power Automate. The system also shows a notification on the vendor's bank account card when the account is not approved or the approval is already requested.
-- Whenever any of the following fields is changed, the **Approval Status** is set to the blank value, and the record must be re-approved.
+- A new action, **Send Approval Request** to **Vendor Bank Accounts**, emits a **Vendor Bank Account Approval Requested** business event that can be consumed from Power Automate. The system also shows a notification on the vendor's bank account card when the account is not approved or the approval is already requested.
+- Whenever any of the following fields is changed (the list of tracked fields can be changed by the user in **Tracked Fields**), the **Approval Status** is set to the blank value, and the record must be re-approved.
   - **Bank Account No.**
   - **Bank Branch No.**
   - **EFT BSB No.**
   - **SWIFT Code**
   - **IBAN**
 - When **Approval Status** is reset on any of **Vendor Bank Account** or a new account is created, the corresponding **Vendor** is blocked (**Blocked = Payments**).
-- Once all **Vendor Bank Accounts** for the vendor are approved, the field is automatically set to **Blocked = ''**. If there is at least one bank account that is not approved yet, the **Vendor** can not be unblocked.
+Once all **Vendor Bank Accounts** for the vendor are approved, the field is automatically set to **Blocked = ''**. If at least one bank account has not been approved yet, the **Vendor** can not be unblocked.
 - If the **Vendor Bank Account** is deleted, the system will check if there are other bank accounts waiting for approval. If there are no other accounts, the **Vendor** will be automatically unblocked.
+- You can use **Record Limits** to define Vendor Bank Account that must be approved whenever any of the tracked fields is changed.
 
 ## Setup
 
