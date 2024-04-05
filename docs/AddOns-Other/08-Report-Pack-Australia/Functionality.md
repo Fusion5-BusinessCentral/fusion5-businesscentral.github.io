@@ -28,7 +28,10 @@ The following reports support trading name functionality:
 - Standard Sales - Order Confirmation
 - Standard Sales - Quote
 - Standard Sales - Shipment
+- Standard Sales - Draft Invoice
+- Standard Sales - Pro Forma Invoice
 - Customer - Payment Receipt (Fusion5)
+- Standard Statement
 - Customer Statement (Fusion5)
 
 ## New Reports
@@ -52,6 +55,9 @@ The following reports have custom fields and data items available, so even when 
 - Standard Sales - Invoice
 - Standard Sales - Shipment
 - Standard Sales - Credit Memo
+- Standard Sales - Draft Invoice
+- Standard Sales - Pro Forma Invoice
+- Standard Statement
 
 ### Purchase
 
@@ -74,7 +80,10 @@ The following reports have custom layout(s) specifically made for Australia.
 - Standard Sales - Invoice
 - Standard Sales - Shipment
 - Standard Sales - Credit Memo
+- Standard Sales - Draft Invoice
+- Standard Sales - Pro Forma Invoice
 - Customer Statement (Fusion5)
+- Standard Statement
 - Customer - Payment Receipt (Fusion5)
 
 ### Purchase
