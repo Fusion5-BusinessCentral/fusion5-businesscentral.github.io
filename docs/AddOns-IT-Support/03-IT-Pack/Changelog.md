@@ -6,6 +6,14 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
  
+## [2.2.0] - 2024-03-28
+  
+### Changes
+- Fusion5 telemetry logger was moved from A02 IT Pack to A00 Licensing.
+
+### Fixes
+- CreateTableRelation procedure now supports up to 250 incremented Table Relation codes.
+
 ## [2.1.0] - 2024-01-31
   
 Available version: 23.0+
