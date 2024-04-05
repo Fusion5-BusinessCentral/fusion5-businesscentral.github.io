@@ -10,7 +10,7 @@ All notable changes to this project will be documented in this file.
   
 Available version: 22.2+
 
-Fixes
+### Fixes
 - Show correct file name and bank account in BPAY register.
 
 ## [1.2.0] - 2023-11-15

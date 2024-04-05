@@ -10,7 +10,7 @@ All notable changes to this project will be documented in this file.
   
 Available version: 23.0+
 
-Changes
+### Changes
 - Limit Power Automate workflow for selected records in a table only using **Power Automate Flow Record Limitation**.
 - Generic table **Power Automate Flow Tracked Field** where users can specify tracked fields for every Power Automate workflow.
 - Major refactoring of interfaces used for implementing custom power automate flows.
@@ -23,7 +23,7 @@ Changes
     - procedure GetSourceTable() SourceTableNo: Integer
     - procedure SetApprovalStatus(SourceRecordID: Guid; NewApprovalStatus: Enum "FS5B07 Approval Status");
 
-Obsoleted Functions (will be removed in 25.0)
+### Obsoleted Functions (will be removed in 25.0)
 - There are no obsoleted functions from the user perspective.
 - Obsoleted functions/objects:
   - interface "FS5B07 PA Workflow" (replaced by "FS5B07 Manage PA Workflow" and "FS5B07 Run PA Workflow" interfaces)

@@ -10,25 +10,25 @@ All notable changes to this project will be documented in this file.
   
 Available version: 23.0+
 
-Changes
+### Changes
 - AddOn was renamed from "Report Pack - Australia" to "Document Pack (Australia)
 - ABN in all custom reports is now formatted: "XX XXX XXX XXX"
 
-Fixes
+### Fixes
 - Company Bank Branch No. is not printed correctly in custom reports
 
 ## [2.1.0.1] - 2024-03-29
   
 Available version: 23.0+
 
-Fixes
+### Fixes
 - Hotfix for Customer Payment Receipt layout that generated additional blank page.
 
 ## [2.1.0] - 2024-03-28
   
 Available version: 23.0+
 
-Changes
+### Changes
 - New Fusion5 layouts
   - Standard Statement
   - Standard Sales - Draft Invoice
@@ -40,14 +40,14 @@ Changes
 - "Total" fields in our layouts now have "GST" instead of "Tax"
 - Internal redesign for all custom report layouts to use predefined Word styles
 
-Compatibility
+### Compatibility
 - Preparation for v27 Home Page field change from 80 to 255 characters.
 
 ## [2.0.0] - 2023-12-15
   
 Available version: 23.0+
 
-Changes
+### Changes
 - Trading Names functionality
 - Trading Names support for the following reports:
   - Standard Purchase - Order
@@ -63,7 +63,7 @@ Changes
   
 Available version: 22.0+
 
-Changes
+### Changes
 - New custom layouts
   - Purchase - Return Shipment
   - Transfer Shipment
@@ -74,7 +74,7 @@ Changes
   
 Available version: 22.0+
 
-Minor changes
+### Changes
 - FS5A08LineDiscountAmount column available for Sales Quote, Order, Posted Invoice and Posted Credit Note reports.
 - FS5A08TaxAmount formatted.
 - Licensing changes.

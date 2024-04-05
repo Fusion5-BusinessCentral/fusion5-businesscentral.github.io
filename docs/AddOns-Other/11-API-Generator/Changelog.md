@@ -10,7 +10,7 @@ All notable changes to this project will be documented in this file.
   
 Available version: 23.0+
 
-Changes
+### Changes
 - Add multiple fields to the API page at once.
 - Limit fields that can be added to the API page:
   - Fields with ObsoleteState = Removed are not allowed.
@@ -18,7 +18,7 @@ Changes
 - Show API URL in API Generator Tables in BC.
 - Improved description of steps to check the deployement status.
 
-Fixes
+### Fixes
 - Do not generate SourceTableView if the defined table relation has no lines.
 - Do not generate fields with ObsoleteStatus = Removed even if they are defined in the field list.
 - Fix for SystemId field, which has "$SystemId" name in the background.

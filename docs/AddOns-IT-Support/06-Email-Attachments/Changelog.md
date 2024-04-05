@@ -10,7 +10,7 @@ All notable changes to this project will be documented in this file.
 
 Available version: 22.2+
 
-Changes
+### Changes
 - Hotfix for Vendor Ledger Entries attachment factbox.
 - Attachment actions in Vendor and Customer Ledger Entries.
 
@@ -18,7 +18,7 @@ Changes
   
 Available version: 22.2+
 
-Changes
+### Changes
 - Document Attachments for Customer and Vendor Ledger Entries
 - Copy document attachments from sales/purchase document to customer/vendor ledger entries automatically during posting
 

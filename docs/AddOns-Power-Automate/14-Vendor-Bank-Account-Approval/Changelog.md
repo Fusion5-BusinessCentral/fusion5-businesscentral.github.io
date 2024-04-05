@@ -10,7 +10,7 @@ All notable changes to this project will be documented in this file.
   
 Available version: 23.0+
 
-Changes
+### Changes
 - Added support for **Record Limits** and **Tracked Fields** (see [Pack for Power Automate](../07-Pack-for-Power-Automate/Functionality.md) for more details).
   - When the flow is enabled, all flow is active for all records.
   - When the flow is enabled, the following fields are tracked:
