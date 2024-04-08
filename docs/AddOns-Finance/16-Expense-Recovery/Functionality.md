@@ -102,24 +102,23 @@ The process is
 
 ![image.png](./img/ExpenseRecoveryWorksheet.png)
 
-
 ### Extract
 
-When the action is run, user is able to specify date range for which the expenses should be extracted. Processed expenses are stored in **Processed Expense Recovery Lines** table and are not suggested twice.
+When the action is run, the user can specify the date range for which the expenses should be extracted. Processed expenses are stored in the **Processed Expense Recovery Lines** table and are not suggested twice.
 
-System will automatically apply configured filters.
+The system will automatically apply configured filters.
 
 ### Validate
 
-When the action is run, system automatically verifies existing lines in **Expense Recovery Worksheet**. If any error is found (missing records in related tables, missing records in target company, missing setup etc.), the line is marked as **Has Error** = **Yes** and the error details are added to the error details field.
+The system automatically verifies existing lines in **Expense Recovery Worksheet**when the action is run. Suppose any error is found (missing records in related tables, missing records in the target company, missing setup, etc.). In that case, the line is marked as **Has Error** = **Yes** and the error details are added to the error details field.
 
-Users must resolve all errors or remove the lines before generating sales documents/lines in target company.
+Users must resolve all errors or remove the lines before generating sales documents/lines in the target company.
 
 ### Generate Lines in Target Company
 
 This action is visible only when the **Company Type** = **Source**.
 
-This action moves records from **Expense Recovery Worksheet** in source company to the **Expense Recovery Worksheet** in target company.
+This action moves records from the **Expense Recovery Workset** in the source company to e **Expense Recovery Workset** in the target company.
 
 ### Generate Sales Documents
 
