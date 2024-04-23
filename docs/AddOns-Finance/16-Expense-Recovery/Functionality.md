@@ -125,3 +125,7 @@ This action moves records from the **Expense Recovery Workset** in the source co
 This action is visible only when the **Company Type** = **Target** or **Both**.
 
 This action generates sales documents from lines in **Expense Recovery Worksheet**.
+
+## Processed Expense Recovery Lines
+
+**Processed Expense Recovery Lines** contains processed lines from **Expense Recovery Worksheet**. Furthermore, this page contains information about created sales document (applies only to companies with **Company Type** = Target or Both) such as created sales document number or posted invoice number.
