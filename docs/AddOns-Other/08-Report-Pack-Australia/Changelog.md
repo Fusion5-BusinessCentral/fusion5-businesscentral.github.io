@@ -6,6 +6,16 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
  
+## [2.3.0] - 2024-05-10
+  
+Available version: 23.0+
+
+### Changes
+- FS5A08CompanyEFTBSBNo added to Standard Statement
+- FS5A08SellToPhoneNo added to Standard Sales - Quote, Order Confirmation, Draft Invoice, Pro Forma Inv, Shipment, Invoice, Credit Memo, Standard Statement, Customer Payment Receipt, Remittance Advice - Entries
+- FS5A08VendorBankAccountName, FS5A08VendorBankAccountNo, FS5A08VendorEFTBSBNo added to Remittance Advice - Entries
+- Trading Name is now stored to archived document when the document is archived.
+
 ## [2.2.0] - 2024-04-05
   
 Available version: 23.0+
