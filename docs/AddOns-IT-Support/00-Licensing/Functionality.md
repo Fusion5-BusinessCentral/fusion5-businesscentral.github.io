@@ -38,14 +38,12 @@ There are two main pages in this extension, **Licensable Extensions** and **Exis
 
 ### User Limits
 
-If the extension limits number of the users that may use the extension, only users with plans different from the plans below are considered.
-- Global Admin
-- D365 Admin
-- D365 Admin Partner
-- Delegated Admin
-- Helpdesk
-- Accountant Hub
-- Microsoft 365
+If the extension limits number of the users that may use the extension, only users with following plans are considered:
+- Premium Plan
+- Premium ISV (Embedded) Plan
+- Essential Plan
+- Essential ISV (Embedded) Plan
+- Essential Attached Plan
 
 ## For developers
 

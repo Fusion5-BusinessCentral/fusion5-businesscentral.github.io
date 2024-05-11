@@ -6,6 +6,18 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
  
+## [2.9.0] - 2024-05-10
+
+Available version: 23.0+
+
+### Changes
+- Only the following license plans are included in user limit (for extension licensed using per user model)
+  - Premium Plan
+  - Premium ISV (Embedded) Plan
+  - Essential Plan
+  - Essential ISV (Embedded) Plan
+  - Essential Attached Plan
+
 ## [2.8.0] - 2024-03-28
 
 Available version: 23.0+
