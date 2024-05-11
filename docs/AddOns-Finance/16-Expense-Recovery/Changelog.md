@@ -5,7 +5,17 @@ sidebar_class_name: 'nav-det-level'
 
 # Change Log
 All notable changes to this project will be documented in this file.
+   
+## [1.3.0.0] - 2024-05-10
   
+Available version: 23.0+
+
+### Extensibility Improvements
+- New Events
+  - OnAfterCreateSalesDocument(Record "FS5A16 Exp. Recovery Line"; var Record "Sales Header"; var Record "Sales Line")
+- New Event Parameters
+  - OnCreateSalesDocumentBeforeCreateSalesHeader - Record "FS5A16 Exp. Recovery Line"
+
 ## [1.2.0.1] - 2024-04-21
   
 Available version: 23.0+
