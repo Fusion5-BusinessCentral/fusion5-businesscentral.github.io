@@ -6,6 +6,13 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
  
+## [2.10.0] - 2024-05-12
+
+Available version: 23.0+
+
+### Fixes
+- Fix for the issue causing problems with installing extensions that have inactive permanent licenses.
+
 ## [2.9.0] - 2024-05-10
 
 Available version: 23.0+
