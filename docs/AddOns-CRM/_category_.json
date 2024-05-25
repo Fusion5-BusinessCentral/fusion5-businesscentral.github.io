@@ -1,0 +1,9 @@
+{
+  "label": "AddOns: Dynamics 365 Integrations",
+  "position": 45,
+  "link": {
+    "type": "generated-index",
+    "description": "Find out how to integrate your Dynamics 365 products with Business Central."
+  },
+  "className": "nav-top-level"
+}
