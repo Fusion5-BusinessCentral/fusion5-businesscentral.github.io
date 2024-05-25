@@ -7,7 +7,7 @@ sidebar_class_name: 'nav-det-level'
 
 ## New supported fields for synchronization
 
-### Customer <> CRM Account
+### Customer -- CRM Account
 
 New fields supported for Customer/Account synchronization:
 - Available Credit Limit (to CE only)
@@ -17,7 +17,7 @@ New fields supported for Customer/Account synchronization:
 - Country (custom CE table)
 - Payment Terms (custom CE table)
 
-### Vendor <> CRM Account
+### Vendor -- CRM Account
 
 New fields supported for Vendor/Account synchronization:
 - Blocked
@@ -25,14 +25,14 @@ New fields supported for Vendor/Account synchronization:
 - Country (custom CE table)
 - Payment Terms (custom CE table)
 
-### Item <> CRM Product
+### Item -- CRM Product
 
 New fields supported for Item/Product synchronization:
 - Item Category (custom CE table)
 - General Product Posting Group (custom CE table)
 - Inventory Posting Group (custom CE table)
 
-### Sales Order <> CRM Order
+### Sales Order -- CRM Order
 
 New fields supported for Sales Order/Order synchronization:
 - Prepayment (%)
@@ -42,7 +42,7 @@ New fields supported for Sales Order/Order synchronization:
 - Payment Schedule (extra large text field)
 - Payment Terms (custom CE table)
 
-### Posted Sales Invoice <> CRM Invoice
+### Posted Sales Invoice -- CRM Invoice
 
 New fields supported for Posted Sales Invoice/Invoice synchronization:
 - Remaining Amount (to CE only)
@@ -52,7 +52,7 @@ New fields supported for Posted Sales Invoice/Invoice synchronization:
 
 ## New supported tables for synchronization
 
-### Country/Region <> CRM Country (custom table)
+### Country/Region -- CRM Country (custom table)
 
 A new custom table in D365 Sales for countries. By default, this table is synchronized From BC (records are created from BC). Using this table, you will never again see the most common issue in standard synchronization, where the country is plain text in D365 Sales.
 
@@ -60,7 +60,7 @@ Fields
 - Code
 - Description
 
-### Payment Terms <> CRM Payment Terms (custom table)
+### Payment Terms -- CRM Payment Terms (custom table)
 
 A new custom table in D365 Sales for payment terms. By default, this table is synchronized from BC (records are created from BC). Using this table, you can define (on the user-level) values available in D365 Sales. In standard synchronization, the payment terms are a fixed list of values.
 
@@ -68,7 +68,7 @@ Fields
 - Code
 - Description
 
-### Item Category <> CRM Product Category (custom table)
+### Item Category -- CRM Product Category (custom table)
 
 A new custom table in D365 Sales for product categories. By default, this table is synchronized from BC (records are created from BC).
 
@@ -77,7 +77,7 @@ Fields
 - Parent Category
 - Description
 
-### Customer Posting Group <> Customer Posting Group (custom table)
+### Customer Posting Group -- Customer Posting Group (custom table)
 
 A new custom table in D365 Sales for customer posting groups. By default, this table is synchronized from BC (records are created from BC).
 
@@ -85,7 +85,7 @@ Fields
 - Code
 - Description
 
-### Vendor Posting Group <> Vendor Posting Group (custom table)
+### Vendor Posting Group -- Vendor Posting Group (custom table)
 
 A new custom table in D365 Sales for vendor posting groups. By default, this table is synchronized from BC (records are created from BC).
 
@@ -93,7 +93,7 @@ Fields
 - Code
 - Description
 
-### Inventory Posting Group <> Inventory Posting Group (custom table)
+### Inventory Posting Group -- Inventory Posting Group (custom table)
 
 A new custom table in D365 Sales for inventory posting groups. By default, this table is synchronized from BC (records are created from BC).
 
@@ -101,7 +101,7 @@ Fields
 - Code
 - Description
 
-### General Product Posting Group <> General Product Posting Group (custom table)
+### General Product Posting Group -- General Product Posting Group (custom table)
 
 A new custom table in D365 Sales for general product posting groups. By default, this table is synchronized from BC (records are created from BC).
 
@@ -109,7 +109,7 @@ Fields
 - Code
 - Description
 
-### General Business Posting Group <> General Business Posting Group (custom table)
+### General Business Posting Group -- General Business Posting Group (custom table)
 
 A new custom table in D365 Sales for general business posting groups. By default, this table is synchronized from BC (records are created from BC).
 
