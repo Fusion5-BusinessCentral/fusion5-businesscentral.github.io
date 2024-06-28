@@ -5,7 +5,33 @@ sidebar_class_name: 'nav-det-level'
 
 # Change Log
 All notable changes to this project will be documented in this file.
- 
+
+## [2.4.0] - 2024-06-25
+  
+### Changes
+- JsonHelper has a new procedures:
+  - ParseAccessTokenResponse(Response: JsonObject; var AccessToken: Text; var AccessTokenExpiration: DateTime)
+  - ParseAccessTokenResponse(Response: JsonObject; var AccessToken: Text; var AccessTokenExpiration: DateTime; ExpirationsOffset: Integer)
+  - ParseRefreshTokenResponse(Response: JsonObject; var RefreshToken: Text)
+- REST Authentication now supports OAuth2 authentication flow with authorization code (previously only OAuth2 with client credential flow was supported)
+  - To support this authentication method, there are major changes to the table fields and table structure that store REST authentication details.
+  - There is a new internal control addin page that handles redirect to external platform where user can log in with external login details.
+  - New procedures (used internally, but are available publicly if needed)
+    - procedure FetchAuthorizationCode()
+    - procedure FetchBearerUsingRefreshToken()
+    - procedure FetchBearerUsingRefreshToken(Force: Boolean)
+    - procedure TryFetchBearerTokenUsingRefreshToken(): Boolean
+    - procedure TryFetchBearerTokenUsingRefreshToken(Force: Boolean): Boolean
+  - New event
+    - OnAfterFetchAuthorizationCodeAfterFetchBearerToken(RESTAuthentication: Record "FS5A03 REST Authentication"; BearerFetched: Boolean)
+
+## [2.3.0] - 2024-05-31
+  
+### Changes
+- **Import Attachments** functionality now support imports of any files. Before this functionality was available for ZIP files only. ZIP files are still automatically unzipped, and the 1st level content is imported instead. 
+- JsonHelper has a new procedure GetJsonTokenAsDateForXMLFormatDateNode
+- REST Management now returns content for Requests even if the request was not successful. This allows other apps to handle correctly errors returned from endpoints.
+
 ## [2.2.0] - 2024-03-28
   
 ### Changes
