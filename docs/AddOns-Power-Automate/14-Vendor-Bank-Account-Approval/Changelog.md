@@ -6,6 +6,18 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
  
+## [1.2.0] - 2024-06-28
+  
+Available version: 23.0+
+
+### Changes
+- New event OnCanUnblockVendorForPayments where other apps can indicate, whether the Blocked field can be set to blank.
+- New procedures
+  - procedure BlockUnblockVendorForPayments(VendorNo: Code[20]; var SourceRecordRef: RecordRef)
+  - procedure BlockVendorForPayments(var Vendor: Record "Vendor"): Boolean
+  - procedure UnblockVendorForPayments(var Vendor: Record Vendor): Boolean
+  - procedure CanUnblockVendorForPayments(VendorNo: Code[20]; var SourceRecordRef: RecordRef): Boolean
+
 ## [1.1.0.1] - 2024-03-12
   
 Available version: 23.0+
