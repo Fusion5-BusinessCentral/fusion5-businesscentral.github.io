@@ -7,7 +7,7 @@ sidebar_class_name: 'nav-det-level'
 
 ## How to use
 
-### Vendor Bank Account Approval
+### Purchase Line Approval
 
 Must be enabled in **Power Automate Flows**. 
 
