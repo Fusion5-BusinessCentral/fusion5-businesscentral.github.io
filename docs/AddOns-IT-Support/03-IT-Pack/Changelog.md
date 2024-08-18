@@ -6,8 +6,18 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [2.5.0] - 2024-07-24
+  
+Available version: 23.0+
+
+### Changes
+- FetchAuthorizationCode() procedure in REST module now returns better error including all details.
+- REST module now support errors returned from API in response body. 
+
 ## [2.4.0] - 2024-06-25
   
+Available version: 23.0+
+
 ### Changes
 - JsonHelper has a new procedures:
   - ParseAccessTokenResponse(Response: JsonObject; var AccessToken: Text; var AccessTokenExpiration: DateTime)
@@ -27,6 +37,8 @@ All notable changes to this project will be documented in this file.
 
 ## [2.3.0] - 2024-05-31
   
+Available version: 23.0+
+
 ### Changes
 - **Import Attachments** functionality now support imports of any files. Before this functionality was available for ZIP files only. ZIP files are still automatically unzipped, and the 1st level content is imported instead. 
 - JsonHelper has a new procedure GetJsonTokenAsDateForXMLFormatDateNode
@@ -34,6 +46,8 @@ All notable changes to this project will be documented in this file.
 
 ## [2.2.0] - 2024-03-28
   
+Available version: 23.0+
+
 ### Changes
 - Fusion5 telemetry logger was moved from A02 IT Pack to A00 Licensing.
 
