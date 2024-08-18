@@ -6,6 +6,18 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [1.3.0] - 2024-08-12
+  
+Available version: 24.0+
+
+### Changes
+- API Generator table is automatically initialized when a new company is created incl. Extension ID and initial version number.
+
+### Fixes
+- Generated app.json file has always **runtime** specified.
+- **API Generator Table Field** now has properly defined lookup/drilldown pages.
+- Links to licensing/support pages fixed.
+
 ## [1.2.0.1] - 2024-03-12
   
 Available version: 23.0+
