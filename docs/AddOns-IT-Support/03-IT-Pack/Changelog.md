@@ -6,6 +6,53 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [3.0.0.1] - 2024-08-29
+  
+Available version: 24.0+
+
+### Changes
+- Refactoring to meet updated Fusion5 programming standards.
+- Improved telemetry for data modification tool and REST authentication modules.
+- REST Module
+  - A new table, **REST Predefined Scope**, can be used to define default scopes available based on the REST Template. The Scope field in the REST Authentication table allows users to select values from this table and add manually defined values.
+  - **IMPORTANT:** From this version, the template in REST Authentication can not be changed once it has been changed from blank to non-blank. Administrators must create a new setup record to use a different template.
+  - **Scope** field will be changed in 26.0 from 100 characters to 2048 characters.
+- 71697626 "FS5A03 Json Helper"
+  - New procedure GetJsonTokenAsSecretText(JsonObject; Text): SecretText
+  - All procedures parsing Access/Refresh tokens were obsoleted and replaced by similar procedures with the SecretText parameter.
+
+### Obsoleted Functionality (will be removed in 25.0)
+  - table 71697625 "FS5A03 REST Authentication"
+    - GetBase64(): Text -> replaced by GetBase64AuthAsSecretText(): SecretText
+    - GetSecret(): Text -> replaced by GetSecretAsSecretText(): SecretText
+    - GetBearer(): Text -> replaced by GetBearerAsSecretText(): SecretText
+    - GetRefreshToken(): Text -> replaced by GetRefreshTokenAsSecretText(): SecretText
+
+### Obsoleted Functionality (will be removed in 26.0)
+- There are no obsoleted functions from the user's perspective.
+- Obsoleted functions/objects:
+  - 71697634 "FS5A03 Config. Package Mgt." (the logic is now part of OOTB functionality)
+  - 71697626 "FS5A03 Json Helper"
+    - ParseAccessTokenResponse(JsonInStream: InStream; var AccessToken: Text; var AccessTokenExpiration: DateTime)
+    - ParseAccessTokenResponse(JsonInStream: InStream; var AccessToken: Text; var AccessTokenExpiration: DateTime; ExpirationsOffset: Integer)
+    - ParseAccessTokenResponse(Response: JsonObject; var AccessToken: Text; var AccessTokenExpiration: DateTime)
+    - ParseAccessTokenResponse(Response: JsonObject; var AccessToken: Text; var AccessTokenExpiration: DateTime; ExpirationsOffset: Integer)
+    - ParseRefreshTokenResponse(Response: JsonObject; var RefreshToken: Text)
+      - Procedures replaced all these procedures with the SecretTextToken parameter. The current implementation with the Text parameter will be removed in 26.0
+  - table 71697625 "FS5A03 REST Authentication"
+    - SetSecret(Text) -> replaced by SetSecret(SecretText)
+      - New function SetSecretTemporaryRecord(Text) for temporary secrets only.
+    - SetBearer(Text) -> replaced by SetBearer(SecretText)
+    - SetBearer(Text; DateTime) -> replaced by SetBearer(SecretText; DateTime)
+      - New function SetBearerTemporaryRecord(Text; DateTime) for temporary secrets only.
+    - SetRefreshToken(Text) -> replaced by SetRefreshToken(SecretText)
+    - SetRefreshToken(Text; DateTime) -> replaced by SetRefreshToken(SecretText; DateTime)
+      - New function SetBearerTemporaryRecord(Text; DateTime) for temporary secrets only.
+    - SetCertificatePassword(Text) -> replaced by SetCertificatePassword(SecretText)
+
+### Removed Functionality
+- Support for Blob export/import using configuration packages (is now supported by OOTB logic).
+
 ## [2.5.0] - 2024-07-24
   
 Available version: 23.0+

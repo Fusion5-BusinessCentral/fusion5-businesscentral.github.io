@@ -24,7 +24,6 @@ sidebar_class_name: 'nav-det-level'
 - If the integration to the Dataverse, Dynamics 365 Sales, or Master Data Synchronization is enabled and the table used in the configuration package is enabled in **Integration Table Mapping**
   - **Skip Table Triggers** can not be selected
   - **Delete Recs Before Processing** can not be selected
-- Solution extends the OOTB by adding the support for BLOB field imports (will be removed once implemented in OOTB solution)
 
 ### Send Notifications for failed/successful Job Queues
 - Notifications for failed and successfully completed job queues can be enabled in **Communication Setup** using **Job Queue Notification Enabled (Recurring)** and **Job Queue Notification Enabled (Non-Recurring)**.
@@ -92,7 +91,8 @@ There are new helpers available for our projects that make some tasks simpler.
 - Currently, it supports the following authentication methods
   - None
   - Basic
-  - OAuth2
+  - OAuth2 (Client Credentials)
+  - OAuth2 (Authorization Code)
   - API
   - Bearer
   - URL Key (key/password passed as API parameter)
