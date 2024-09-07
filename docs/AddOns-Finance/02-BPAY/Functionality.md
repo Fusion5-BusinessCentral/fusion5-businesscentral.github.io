@@ -20,8 +20,12 @@ Currently supported banks and mandatory setup for the bank account
 - CBA (CommBank)
   - Bank Account Card: Bank Account No.
   - Bank Account Card: EFT BSB No.
-- Westpac
+- Westpac CSV
   - No Mandatory Setup for the Bank Account
+- Westpac PPS
+  - Bank Account Card: Bank Account No.
+  - Bank Account Card: EFT BSB No.
+  - Bank Account Card: BPAY Batch Customer ID
 
 ## Setup
 
@@ -40,9 +44,11 @@ If a vendor has more than one BPAY account, you can specify which one should be 
 
 ![BPAY-Vendor.png](./img/Vendor-Setup.png)
 
-Purchase Order/Invoice has a new section **BPAY** in the tab **Shipping and Payment**. Values are preselected from the vendor card (from **Preferred BPAY Account Code**) and could be changed in the document. Once a document is posted, values are transferred to *Posted Purchase Invoice** and **Vendor Ledger Entries**.
+Purchase Order/Invoice has a new section **BPAY** in the tab **Shipping and Payment**. Values are preselected from the vendor card (from **Preferred BPAY Account Code**) and could be changed in the document. Once a document is posted, values are transferred to **Posted Purchase Invoice** and **Vendor Ledger Entries**.
 
 ![BPAY-PurchaseDocument.png](./img/Purchase-Documents.png)
+
+BPAY details in **Vendor Ledger Entries** that are **Open** = **Yes** are editable. 
 
 **Payment Journal** Functionality is done similarly to **EFT Payments**
 

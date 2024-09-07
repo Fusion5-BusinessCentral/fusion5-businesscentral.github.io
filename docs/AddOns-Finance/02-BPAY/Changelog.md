@@ -6,6 +6,18 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
  
+## [2.0.0] - 2024-08-28
+  
+Available version: 24.0+
+
+### Changes
+- Remove the CSV header from Westpac CSV format as it is not longer supported.
+- New format: Westpac PPS (BPAY ABA)
+- The BPAY exported file name defaults to **BPAY_BANKCODE_YYYYMMDD.XX** where XX is the file extension defined by the bank.
+
+### Fixes
+- The BPAY fields in **Vendor Ledger Entries** are now editable for open entries.
+
 ## [1.4.0] - 2024-06-28
   
 Available version: 23.0+
