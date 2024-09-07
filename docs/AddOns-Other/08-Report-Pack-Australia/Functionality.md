@@ -67,6 +67,7 @@ The following reports have custom fields and data items available, so even when 
 
 ### Inventory
 
+- Transfer Order
 - Transfer Shipment
 
 ## Custom Report Layouts
@@ -94,6 +95,7 @@ The following reports have custom layout(s) specifically made for Australia.
 
 ### Inventory
 
+- Transfer Order
 - Transfer Shipment
 
 ## Setup

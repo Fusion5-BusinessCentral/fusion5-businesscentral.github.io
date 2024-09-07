@@ -6,6 +6,38 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
  
+## [3.0.0] - 2024-05-10
+  
+Available version: 24.0+
+
+### Changes
+- Fusion5 report layout captions now use **Document Pack - Australia** instead of **Report Pack - Australia**.
+- FS5A08TradingNameCode in Standard Purchase - Order, Purchase - Return Shipment, Customer Statement (Fusion5), Customer - Payment Receipt (Fusion5), Standard Statement, Standard Sales - Credit Memo, Standard Sales - Draft Invoice, Standard Sales - Invoice, Standard Sales - Order Conf., Standard Sales - Pro Forma Inv, Standard Sales - Quote, Standard Sales - Shipment
+- FS5A08ExternalDocNo_DtldCustLedgEntries, FS5A08ExternalDocNo_CustLedgEntry2 in Standard Statement
+- New Fusion5 layout 
+  - Transfer Order
+
+## [2.4.0.1] - 2024-05-10
+  
+Available version: 23.0+
+
+### Changes
+- Refactoring to meet updated Fusion5 programming standards.
+- FS5A08TransferOrderNo, FS5A08TransferOrderDate, FS5A08CreatedBy in Transfer Shipment report.
+- FS5A08ShipmentDate, FS5A08CreatedBy in Transfer Order report.
+- FS5A08SelltoEmail, FS5A08PromisedDeliveryDate, FS5A08RequestedDeliveryDate, FS5A08CreatedBy, FS5A08CompanyFax, FS5A08GenProdPostingGroup, FS5A08VATProdPostingGroup in Standard Sales - Shipment report.
+- FS5A08SelltoEmail, FS5A08CompanyFax, FS5A08CompanySwiftCode, FS5A08GenProdPostingGroup, FS5A08VATProdPostingGroup in Standard Sales - Quote, Standard Sales - Order Conf., Standard Sales - Invoice, Standard Sales - Draft Invoice  reports.
+- FS5A08SelltoEmail, FS5A08CompanyFax, FS5A08GenProdPostingGroup, FS5A08VATProdPostingGroup in Standard Sales - Pro Forma Inv, Standard Sales - Credit Memo reports.
+- FS5A08CustomerEmail, FS5A08CompanyFax, FS5A08CustomerPayTermsCode, FS5A08CustomerPayTermsDesc, FS5A08DocType_DtldCustLedgEntries, FS5A08DocType_CustLedgEntry2 in Standard Statement
+- CustomerEmail in Standard Statement
+- CustomerEmail, CustomerPhoneNo in Customer Statement (Fusion5)
+
+### Obsoleted Functionality (will be removed in 26.0)
+- There are no obsoleted functions from the user's perspective.
+- Obsoleted functions/objects:
+  - codeunit 71697662 "FS5A08 Install Mgt." (will be set as internal)
+  - codeunit 71697668 "FS5A08 Upgrade" (will be set as internal)
+
 ## [2.3.0] - 2024-05-10
   
 Available version: 23.0+
