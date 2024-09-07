@@ -22,13 +22,23 @@ Must be enabled in **Power Automate Flows**.
   - **VAT Base Amount**
   - **Line Amount**
   - **Direct Unit Cost**
-- You can use **Record Limits** to define Purchase Lines that must be approved whenever any of the tracked fields is changed.
+- Tracked fields support tolerance definition (both absolute and percentage). The tolerance can be allowed for all purchase document types or only for selected ones.
+- Purchase Line Approval supports additional tracked table - Document Dimension. Tracked dimensions can be configured through the **Power Automate Flow** -> **Additional Tracked Tables**.
+- You can use **Record Limits** to define Purchase Lines that must be approved whenever any tracked fields are changed.
 
 ## Setup
 
 New option **Purchase Line Approval** in **Power Automate Flows** table. 
 
 When changing the flow to disabled, the system checks whether there are any **Purchase Documents** with **Status** = **Pending Line Approval**. If any document with this status exist, they are automatically changed to **Status** = **Open**.
+
+### Approval User Setup
+
+Approval User Setup has been extended with two new fields: **Purchase Line Approval Limit** and **Unlimited Purchase Line Approver**. These fields are available in Power Automate through the purchaseLineApprovalLimits API (see below.)
+
+### Power Automate Flow Extended Setup
+
+The extended setup (available from the Power Automate Flow page) has two new setup fields to define behaviour for nonapproved documents and printing: **Purchase Order Print Conditions** and **Purchase Return Order Print Conditions**.
 
 ## Power Automate
 
@@ -38,9 +48,18 @@ To configure the Power Automate flow, open https://make.powerautomate.com/ with 
 
 In Power Automate, go to **Solutions** -> **Import Solution**.
 
+### Download Power Automate Template
+
+Single Approver Power Automate Flow template solution is available from **Power Automate Templates**.
+
 ## Available API Pages
 
 All API pages have APIPublisher = 'fusion5', APIGroup = 'purchaseLineApproval';
+
+- **Purchase Line Limits** (View line approvers and their limits)
+  - APIVersion = 'v1.0';
+  - EntityName = 'purchaseLineApprovalLimit';
+  - EntitySetName = 'purchaseLineApprovalLimits';
 
 - **Purchase Lines** (View existing Purchase Lines)
   - APIVersion = 'v1.0';
