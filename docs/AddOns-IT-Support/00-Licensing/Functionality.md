@@ -45,6 +45,25 @@ If the extension limits number of the users that may use the extension, only use
 - Essential ISV (Embedded) Plan
 - Essential Attached Plan
 
+### Verification Logic
+
+License validity can be verified using three different ways
+- Manually from **Existing Fusion5 Licenses**
+- Automatically, when the licensed process is run
+- Automatically using the **codeunit 71697603 FS5VerifyLicenseJob**
+
+#### Automated Verification when the Licensed Process is run
+
+Whenever the licensed process is run, the system tries to verify the license. If the license was verified successfully in the past five days, it is considered valid.
+
+If the license has not been verified for 5 days, the system will run the verification against the licensing server (once every 15 minutes at maximum). If the license has not been verified for more than 7 days, it is considered invalid, and the licensed process cannot be completed.
+
+#### Automated Verification using **codeunit 71697603 FS5VerifyLicenseJob**
+
+The job queue for license verification is scheduled to run automatically once every day. It is rescheduled or recreated (if it was manually deleted) whenever a user with appropriate permission logs in to the company. 
+
+The license is verified only if the last successful verification was more than 4 days ago.
+
 ## For developers
 
 To add this extension to a new add-on, use the **codeunit 71697595 "FS5 Licensing Management"**.

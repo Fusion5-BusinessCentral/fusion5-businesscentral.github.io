@@ -6,6 +6,25 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
  
+## [3.0.0] - 2024-08-13
+
+Available version: 24.0+
+
+### Changes
+- Refactoring to meet updated Fusion5 programming standards.
+- Added logic and action to hide the notification about the sandbox license whenever the system tries to verify the license in a sandbox environment for an extension that does not require a license for sandbox environments.
+- A telemetry notification for unsuccessful license verification notifications was added.
+- The licensing logic for the number of companies has been changed to calculate all companies in the environment except evaluation companies.
+- Added a Job Queue Task that verifies all licenses once a day (if they have not been verified for 4 days). This job queue is configured automatically and is reconfigured/restarted whenever a user with proper permissions opens the company.
+
+### Fixes
+- Fix the issue if the user does not have permission to access the first company in the database
+
+### Obsoleted Functionality (will be removed in 26.0)
+- There are no obsoleted functions from the user's perspective.
+- Obsoleted functions/objects:
+  - 71697598 "FS5 License-Install Mgt." (will be set as internal)
+
 ## [2.10.0] - 2024-05-12
 
 Available version: 23.0+
