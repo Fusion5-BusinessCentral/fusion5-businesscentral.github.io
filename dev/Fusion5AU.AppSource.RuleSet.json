@@ -305,6 +305,11 @@
             "id": "LC0057",
             "action": "Error",
             "justification": "Set as error: Enum values must have non-empty a Caption to be selectable in the client."
+        },
+        {
+            "id": "LC0068",
+            "action": "None",
+            "justification": "Disable: The current object is missing indirect permissions permissions."
         }
     ]
 }
