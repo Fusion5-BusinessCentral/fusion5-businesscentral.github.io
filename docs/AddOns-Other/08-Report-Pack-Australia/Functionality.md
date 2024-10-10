@@ -3,100 +3,92 @@ sidebar_position: 1
 sidebar_class_name: 'nav-det-level'
 ---
 
-# Functionality
+# Document Pack - Australia
 
-## Send Customer Payment Receipt
+## Value Proposition 
+
+Our Document Pack is tailored specifically for Australian businesses, ensuring compliance with local requirements. It enables seamless customer payment receipt processing directly from Customer Ledger Entries using standard email functionality with customisable scenarios. 
+
+### Key Features: 
+
+- **Custom Report Layouts for Australia**: 
+  - **Sales Documents**: Standard Sales - Quote, Order Confirmation, Invoice, Shipment, Credit Memo. 
+  - **Purchase Documents**: Standard Purchase - Order. 
+  - **Financial Documents**: Remittance Advice - Entries. 
+- **Specialized Reports**: 
+  - **Customer - Payment Receipt (Fusion5)**: Customizable payment receipts to meet specific business needs. 
+- **Customisation Benefits**: 
+  - **Localized Compliance**: Ensures all documents meet Australian regulatory requirements. 
+  - **Enhanced Email Functionality**: Send customer payment receipts directly from Customer Ledger Entries with customisable email scenarios, improving efficiency and communication. 
+  - **Tailored Reporting**: Custom report layouts and specialised reports designed to provide clear, concise, and compliant documentation for various business processes. 
+
+## Using Document Pack 
+
+Within Business Central, search for “Report Layouts” 
+
+![image.png](./img/01-UsingDocumentPack.png)
+
+Within the **"Report Layout"** page, search for **“Fusion5”**. 
+ 
+![image.png](./img/02-UsingDocumentPack.png)
+
+All the reports within the range of 400 and 6636 are Fusio5 extend reports and reports 71697660 and 71697661 are custom reports that Fusion5 has built. 
+
+To test the layout, the user can select the layout and use the “Run Report” function to test the layout. 
+
+![image.png](./img/04-UsingDocumentPack.png)
+
+Users can mark the Fusio5 extended layout as “Default” to replace the existing layout with the new one”. 
+ 
+![image.png](./img/05-UsingDocumentPack.png)
+
+To default the custom layout, i.e. 71697661 (Customer - Payment Receipt (Fusion5)), users will be required to navigate “Report Selection - Sales” and change the usage for Customer Statement and Customer – Payment Receipt  
+
+![image.png](./img/06-A-UsingDocumentPack.png)
+
+![image.png](./img/06-B-UsingDocumentPack.png)
+
+## Making Changes to Fusion5 Layouts
+
+All the reports offered in the Fiusion5 Document Pack are designed in a Word layout, making it easy for users with non-IT backgrounds to configure the layout without any extensive technical expertise.
+
+To make changes to an existing Fusion5 layout, the user can select the layout in the “Report Layout” page and export the layout 
+
+![image.png](./img/01-A-MakeChanges.png)
+ 
+![image.png](./img/01-B-MakeChanges.png)
+ 
+Open the downloaded document, make the required changes, and import the document.
+
+Users can choose to either replace the existing document or create a layout copy.
+
+To replace the existing document layout, the user can select the “Replace Layout” function.
+
+![image.png](./img/03-MakeChanges.png)
+
+To create a copy of the layout, users can select the “New” function and upload the layout.
+
+![image.png](./img/04-MakeChanges.png)
+ 
+Drag and drop the customised layout.
+
+## Additional Functionality
+
+### Send Customer Payment Receipt
 
 A new action **Send Customer Payment Receipt** in **Customer Ledger Entries** allows sending configured Customer Payment Receipt. The process uses the standard email functionality with a custom email scenario.
 
-## Copy Document Comment Lines
+### Copy Document Comment Lines
 
 Copy documents functionality for sales and purchase documents has been extended by the "Include Comments" option. If this option is active, the document is copied, including records in "Sales Comment Line" and "Purchase Comment Line".
 
-## Trading Names
+### Trading Names
 
 **Trading Names** allow to define of multiple names (and addresses) for the Company. These addresses can be selected on the Customer and Vendor card and are automatically transferred to newly created documents (where they can be changed or removed).
 
 If the supported document with the trading name is printed, the trading name identifications are printed instead of the company name. When the **Trading Name** is specified, all information from the **General** tab is used instead of information from the Company Information record. However, fields in the **Communication** tab are used only when they have a value; otherwise, the value from the company information is used.
 
 ![image.png](./img/Trading-Names.png)
-
-The following reports support trading name functionality:
-- Standard Purchase - Order
-- Standard Sales - Credit Memo
-- Standard Sales - Invoice
-- Standard Sales - Order Confirmation
-- Standard Sales - Quote
-- Standard Sales - Shipment
-- Standard Sales - Draft Invoice
-- Standard Sales - Pro Forma Invoice
-- Customer - Payment Receipt (Fusion5)
-- Standard Statement
-- Customer Statement (Fusion5)
-
-## New Reports
-
-- Customer Statement (Fusion5), report 71697660
-  - Copy of 17110 "AU/NZ Statement"
-  - Restructured, refactored, and updated for Word layouts.
-
-- Customer - Payment Receipt (Fusion5), report 71697661
-  - Copy of receipt from GB/US localization
-  - Restructured, refactored, and updated specifically for Word layouts.
-
-## Extended Reports
-
-The following reports have custom fields and data items available, so even when our custom report layouts do not have all values you require, there is a chance the field is still available and you need only to update the custom layout!
-
-### Sales
-
-- Standard Sales - Quote
-- Standard Sales - Order Confirmation
-- Standard Sales - Invoice
-- Standard Sales - Shipment
-- Standard Sales - Credit Memo
-- Standard Sales - Draft Invoice
-- Standard Sales - Pro Forma Invoice
-- Standard Statement
-
-### Purchase
-
-- Standard Purchase - Order
-- Purchase - Return Shipment
-- Remittance Advice - Entries
-
-### Inventory
-
-- Transfer Order
-- Transfer Shipment
-
-## Custom Report Layouts
-
-The following reports have custom layout(s) specifically made for Australia.
-
-### Sales
-
-- Standard Sales - Quote
-- Standard Sales - Order Confirmation
-- Standard Sales - Invoice
-- Standard Sales - Shipment
-- Standard Sales - Credit Memo
-- Standard Sales - Draft Invoice
-- Standard Sales - Pro Forma Invoice
-- Customer Statement (Fusion5)
-- Standard Statement
-- Customer - Payment Receipt (Fusion5)
-
-### Purchase
-
-- Standard Purchase - Order
-- Purchase - Return Shipment
-- Remittance Advice - Entries
-
-### Inventory
-
-- Transfer Order
-- Transfer Shipment
 
 ## Setup
 
