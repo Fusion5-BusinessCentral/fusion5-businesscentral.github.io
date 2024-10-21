@@ -19,6 +19,7 @@ sidebar_class_name: 'nav-det-level'
   - [Data Synchronization](#data-synchronization)
     - [Manual](#manual-synchronization)
     - [Automatic](#automatic-synchronization)
+- [FAQ](#faq)
 
 This addon uses API Integrator. You can find more details about possible configuration in [API Integrator documentation](../17-API-Integrator/Functionality.md).
 
@@ -139,3 +140,14 @@ You can run the synchronization manually. Open **Integration API Mappings**, sel
 #### Automatic Synchronization
 
 You can generate a job queue that will synchronize records with predefined periodicity. Navigate to **Integration API Mappings** and use action **Recreate Job Queue Entry**. Once the job queue is generated, you can specify the periodicity.
+
+## FAQ
+
+- Q: How do I disconnect from Xero?
+  - A: See [Revoke access to Xero](#revoke-access-to-xero)
+- Q: What does your integration do?
+  - A: The Integration is Generic, see the documentation above for details.
+- Q: When and how does data sync occur?
+  - A: The synchronization can be run manually or using standard Business Central Job Queue.
+- Q: Can you help me setup the integration?
+  - Of course! Our expert team can design and configure your integration. Please [contact us](https://www.fusion5.com.au/contact-us/).
