@@ -82,6 +82,8 @@ Once the mapping is reset, navigate to **Integration API Mappings** to see defau
 
 Due to the usual differences between every Business Central implementation, these mappings are designed as an example of how you can configure your own mappings between Business Central and Xero. The mappings are tested against the Xero Demo Company, so if you have Xero Demo Company connected, you will be able to create Contacts and Invoices in Xero.
 
+![image.png](./img/ExampleMappingDiagram.png)
+
 ### Creating/Changing mappings
 
 You can find more details about the Xero API endpoints and field names in the official Xero API Documentation https://developer.xero.com/documentation/api/accounting/overview
