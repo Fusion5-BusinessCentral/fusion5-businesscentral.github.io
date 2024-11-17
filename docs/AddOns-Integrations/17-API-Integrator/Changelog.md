@@ -6,6 +6,59 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
   
+## [1.5.0] - 2024-11-11
+  
+Available version: 24.0+
+
+### Fixes
+- Fixed JQ description for Child (different request) mappings to show the correct direction of the parent mapping.
+- Fixed InherentPermissions to prevent issues when working in a multi-company environment where the user does not have access to all companies.
+- Fixed a problem when finding the coupled relationship record value.
+
+### Changes
+- Final refactoring to follow changes in v24 suggested by LinterCop.
+- **Run Test** action in **Integration API Mappings** renamed to **Run Once (Foreground)**.
+  - The action now shows a dialogue to select whether to run **Diff Sync** (to synchronize only records modified since the last synchronization) or **Full Sync** (to run unconditional synchronization). Both actions behave the same if the mapping does not support differential updates.
+- **Integration API Mappings** page filtered automatically to mappings with **Delete After Synchronization** to hide temporary mappings generated in the background when running full synchronization.
+- New fields in **Integration API Mappings**
+  - **Synch. to BC API Filter Field Name**
+  - **Minimum Synch. to BC API Filter Field Name**
+  - **Minimum Synch. to BC Modified Since**
+    - These fields allow for the configuration of API mapping to support differential synchronization.
+    **Minimum** fields specify the datetime of the first records to synchronize. This field is never updated automatically.
+    - The **other** fields are used to specify the datetime of the last synchronization. This field is updated automatically using the value from the **Integration API Field Mapping** with **Subtype** = **Last Modification DateTime**.
+    - If both fields are used and have configured the same value (e.g. Minimum and the other field have **ModifiedSince** field), the MAXVALUE(MinimumField, OtherField) is used.
+    - If both fields are used and have configured a different value (e.g. Minimum field has **CreatedSince** and the other field has **ModifiedSince** field), both values are sent independently.
+  - **Job Queue Category Code**
+    - Allows you to specify the **Job Queue Category** that will be used to run the selected mapping. This option can be used to schedule job queues to run in parallel (standard BC behaviour - if JQ entries have the same category, they run in sequence).
+- New options for **Integration API Field Mapping**
+  - Data Format (implemented for ToAPI only)
+  - Data Format Type (implemented for ToAPI only)
+    - See https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-format-property for details (Data Format = first column from the documentation page, Data Format Type = second column from the documentation page)
+    - Only one of those two fields can be specified.
+- New fields in **Integration API Mappings**
+  - **One Time Synchronization Job Queue Category Code**
+    - Allows to specify **Job Queue Category** that will be used to run full synchronizations.
+- **API Synchronization Errors** page contains new action **Show Error Details** that shows full, untruncated, error details.
+- Added support for Deleting HTTP requests. This is currently not implemented for this module but can be used by custom implementations.
+- **Accept = application/json** HTTP header is added automatically to every request and does not need to be specified in **Custom HTTP Headers table**.
+- **API Synch. Job** now supports retention policy
+  - Records must be kept for at least 7 days.
+  - The default suggested filter is to delete entries after 3 months (editable).
+- Improved permission sets
+  - **API Integration - Read** (allows to read all tables)
+  - **API Integration - Standard** (allows to use and run synchronizations)
+  - Extended permission sets
+    - **D365 READ** contains **API Integration - Read**
+    - **D365 BASIC** contains **API Integration - Standard**
+
+### Obsoleted Functionality (will be removed in 26.0)
+- **Field Subtype** value **Create DateTime** from **Integration API Field Mapping** will be removed.
+
+### Obsoleted Functionality (will be removed in 27.0)
+- **CreateRecord()** procedures in **Integration API Mapping** with IntegrationAPIType + IntegrationAPIMappingName parameters replaced by procedures with IntegrationAPIMapping record parameter.
+- **Error Message** text 2048 field in **API Synch. Job Errors** was replaced by a blob (unlimited text length) field.
+
 ## [1.4.0] - 2024-08-08
   
 Available version: 24.0+
