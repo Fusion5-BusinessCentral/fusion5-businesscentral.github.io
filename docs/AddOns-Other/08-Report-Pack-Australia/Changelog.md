@@ -6,6 +6,55 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
  
+## [3.5.0.1] - 2024-11-10
+  
+Available version: 24.0+
+
+### Fixes
+- **Remittance Advice - Entries** did not show the logo if multiple documents for the same vendor were printed.
+
+### Changes
+- **General Ledger Entries** now have Global and Shortcut Dimension Names (by default, only Codes are available).
+- New columns in **Remittance Advice - Entries** report
+  - FS5A08OurAccountNo
+
+## [3.4.0] - 2024-10-17
+  
+Available version: 24.0+
+
+### Changes
+- New function in **FS5A08 Format Document** - BlankIfZero() with Text, Decimal overloads. 
+- New columns in **Standard Sales - Order Confirmation** and **Standard Sales - Quote** reports
+  - FS5A08RequestedDeliveryDate
+  - FS5A08CreatedBy
+  - FS5A08PaymentTermsCode
+
+## [3.3.0] - 2024-10-08
+  
+Available version: 24.0+
+
+### Fixes
+- One column in the Sales Order Confirmation layout shows the internal code, not the value.
+
+## [3.2.0] - 2024-10-08
+  
+Internal Release
+
+## [3.1.0] - 2024-08-23
+  
+Available version: 24.0+
+
+### Changes
+- Added support for trading names in **Remittance Advice - Entries**
+- New columns in **Remittance Advice - Entries** report
+  - FS5A08TradingNameCode
+- New columns in **Standard Purchase - Order** report
+  - FS5A08VendorPhoneNo
+- New columns in **Standard Sales - Invoice** report
+  - FS5A08PaymentTermsCode
+- Format function in reports to get user full name returns now the **User Name** when the **Full Name** is blank.
+- Internal changes to support multiple licensing levels in this extension (basic and warehouse).
+
 ## [3.0.0] - 2024-05-10
   
 Available version: 24.0+
