@@ -5,7 +5,51 @@ sidebar_class_name: 'nav-det-level'
 
 # Change Log
 All notable changes to this project will be documented in this file.
- 
+  
+## [3.4.0] - 2024-10-11
+
+Available version: 24.0+
+
+### Changes
+- Improvements to the License Validation Job Queue to run the validation only if needed
+  - The extension is still installed in the environment.
+  - The extension is still valid (the start date is before Today and the end date is after today)
+  - The extension requires a license for Sandbox, and the current environment is a sandbox environment.
+- Improvements to custom telemetry for LogTelemetryForLicenseVerificationUnsuccessful.
+
+## [3.3.0.1] - 2024-10-01
+
+Available version: 24.0+
+
+### Fixes
+- Fixed issue when **My Notification** error for sandbox license notification is not created, and this notification should be shown in active transaction causing RunModal error.
+
+### Changes
+- Final refactoring to follow changes in v24 suggested by LinterCop.
+- A custom telemetry signal was added to unsuccessful license validation to obtain more details about the issue, including cases where only a warning is shown.
+- Permissions improvements
+  - New permission set **Licensing-Use**
+  - Extended permission sets
+    - **D365 BASIC** & **D365 READ** include **Licensing-Use** automatically
+
+## [3.2.0.1] - 2024-09-26
+
+Available version: 24.0+
+
+### Changes
+- New custom dimensions for telemetry signal for parent/child and bundled licenses to have more details about newly registered/unregistered licenses.
+- New procedure **RemovePermanentLicense(..)** in codeunit 71697595 "FS5 Licensing Management" to be able to remove permanent license.
+- New procedure **RemoveChildExtensionFromBundle(..)** in codeunit 71697595 "FS5 Licensing Management" to be able to parent/child license.
+
+## [3.1.0] - 2024-09-19
+
+Available version: 24.0+
+
+### Changes
+- Refactoring to hide error implementation by adding a facade.
+- New procedure **GetActiveLicenseLevel(..)** in codeunit 71697595 "FS5 Licensing Management" to get the active license level of the extension.
+- The job queue for license verification changed to use TryFunction to prevent job queue failures in case of unlicensed extension.
+
 ## [3.0.0] - 2024-08-13
 
 Available version: 24.0+
