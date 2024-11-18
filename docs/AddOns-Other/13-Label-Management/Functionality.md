@@ -120,7 +120,7 @@ Label can be created directly from the label template, or the label template can
 
 The extension uses the PrintNode agent and [Insight Works PrintNode Connector for Business Central](https://appsource.microsoft.com/en-us/product/dynamics-365-business-central/PUBID.insight-works%7CAID.b0c8bcc7-2924-4cd2-8562-4e71ebd07323%7CPAPPID.b0c8bcc7-2924-4cd2-8562-4e71ebd07323?tab=Overview) to communicate with Zebra printers. The connector is automatically installed with the extension. 
 
-**There may be a fee required to use the PrintNode service. You must create an account at [www.PrintNode.com](www.PrintNode.com) and select the appropriate subscription type, either free or paid. PrintNode is a third-party service not affiliated with Insight Works or Fusion5.**
+**There may be a fee required to use the PrintNode service. You must create an account at [www.PrintNode.com](https://www.PrintNode.com) and select the appropriate subscription type, either free or paid. PrintNode is a third-party service not affiliated with Insight Works or Fusion5.**
 
 #### Printer Selection
 
