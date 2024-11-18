@@ -12,15 +12,26 @@ Available version: 25.0+
 
 ### Changes
 - Added support for v25 document attachments (attach multiple documents) to Customer and Vendor Ledger Entries.
+- Improvements to how the attachment limit is calculated.
 - New field in **Purchases & Payables Setup**
   - **Include Invoice Attachments in Remittance Advice**
-    - When enabled, system automatically attaches PDF invoices when sending remittance advice.
+    - When enabled, the system automatically attaches PDF invoices when sending remittance advice.
 
 ### Extensibility
 - New event **OnAfterAttachDocuments** in codeunit 71697775 "FS5A06 Email Attach. Mgt.".
 
 ### Obsoleted Functionality (will be removed in 27.0)
 - Old pre-v25 document attachment factboxes will be removed from customer and vendor ledger entries in v27. In this release, they are set to visible = false.
+
+## [1.3.0] - 2024-10-22
+  
+Available version: 24.0+
+
+### Part of v2.0.0 released as a hotfix for v24.0
+- Improvements to how the attachment limit is calculated.
+- New field in **Purchases & Payables Setup**
+  - **Include Invoice Attachments in Remittance Advice**
+    - When enabled, the system automatically attaches PDF invoices when sending remittance advice.
 
 ## [1.2.1] - 2023-12-12
 
