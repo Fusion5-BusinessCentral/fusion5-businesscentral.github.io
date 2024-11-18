@@ -6,6 +6,18 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
  
+## [2.0.0.1] - 2024-09-19
+  
+Available version: 24.0+
+
+### Changes
+- Final refactoring to follow changes in v24 suggested by LinterCop.
+- New field **lastModifiedDateTime** in **vendorBankAccounts** API.
+- Added support for Power Automate Approval implementation using BCFlowId logic instead of the LastEntryNo. For more details, see the documentation for A07 Pack for Power Automate.
+
+### Obsoleted Functionality (won't be removed but should not be used for new implementations)
+- A new Business event **FS5A14VendorBankAccountApprovalRequestedWithFlowId** for BCFlowID process was added and should be used instead of the old **FS5A14VendorBankAccountApprovalRequested**.
+
 ## [1.2.0] - 2024-06-28
   
 Available version: 23.0+
