@@ -6,6 +6,37 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [4.1.0.0] - 2024-11-05
+  
+Available version: 25.0+
+
+### Fixes
+- Fixed the issue where users were not able to change the UrlKey in the REST Authentication module.
+
+## [4.0.0.0] - 2024-10-22
+  
+Available version: 25.0+
+
+### Changes
+- Internal changes and updates to reflect changes in v25
+
+### Extensibility
+- **Import Attachments** processing report request page variable **ReplaceWithSameName** is now marked as protected and accessible from report extensions.
+- New event **OnImportAttachmentAfterSaveAttachmentFromStream** in **Import Attachments** module.
+
+## [3.2.0.0] - 2024-11-05
+  
+Available version: 24.0+
+### v4.1.0.0 released as a hotfix for v24.0
+
+## [3.1.0.0] - 2024-10-22
+  
+Available version: 24.0+
+
+### Part of v4.0.0.0 released as a hotfix for v24.0
+- **Import Attachments** processing report request page variable **ReplaceWithSameName** is now marked as protected and accessible from report extensions.
+- New event **OnImportAttachmentAfterSaveAttachmentFromStream** in **Import Attachments** module.
+
 ## [3.0.0.1] - 2024-08-29
   
 Available version: 24.0+
