@@ -6,6 +6,32 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
    
+## [1.5.0] - 2024-10-24
+  
+Available version: 24.0+
+
+### Changes
+- Final refactoring to follow changes in v24 suggested by LinterCop.
+- New fields in **Expense Recovery Setup**
+  - **Copy Dimensions From**
+    - Specifies from where the dimensions in source document should be copied to expense recovery entries.
+      - Lines then Headers (from lines, from headers if lines are blank)
+      - Headers (only from headers)
+      - Lines (only from lines)
+  - 8 new fields **Copy Dimension X Code**
+    - Specify whether to copy the dimension value from the expense recovery entries to target document.
+      - By default, all dimensions are disabled
+      - For environments with app already installed all fields are set to Copy = Yes as the copy logic was previously implemented through customization and disabling these field would may break existing implementations.
+
+### Extensibility
+- **Suggest Expense Recovery Entries** processing report has a new public procedure InitStartingEndingDates(...)
+- New event **OnCreateSalesHeaderBeforeModifySalesHeader** in **Create Sales Documents** codeunit.
+
+### Obsoleted Functionality (will be removed in 27.0)
+- Events **OnBeforeSuggestEntriesFromPurchaseHeaders** and **OnBeforeSuggestEntriesFromPurchaseLines** in codeunit 71697855 "FS5A16 Src.Type-Purch. Inv." are replaced by **OnSuggestEntriesBeforeSuggestFromPurchaseHeaders** and **OnSuggestEntriesBeforeSuggestFromPurchaseLines** due to missing var in IsHandled parameter.
+- Event **OnBeforeUpdateDimensionValueInSalesLine** in codeunit 71697861 "FS5A16 Create Sales Documents" is replaced by **OnBeforeUpdateDimensionValueInCreatedSalesLine** due to missing var in IsHandled parameter.
+- Event **OnExtractExpensesBeforeCheckAndDeleteExistingLines** in codeunit 71697857 "FS5A16 Expense Recovery Mgt." is replaced by **OnBeforeExtractExpensesBeforeCheckAndDeleteExistingLines** due to missing var in IsHandled parameter.
+
 ## [1.4.0] - 2024-06-28
   
 Available version: 23.0+
