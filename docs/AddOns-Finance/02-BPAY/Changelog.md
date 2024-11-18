@@ -6,6 +6,19 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
  
+## [2.1.0] - 2024-10-31
+  
+Available version: 24.0+
+
+### Fixes
+- BPAY Register No. was not correctly transfered to the payment Vendor Ledger Entry.
+
+### Changes
+- Final refactoring to follow changes in v24 suggested by LinterCop.
+- **BPAY Bank Code** code field must have a value.
+- New column in **Remittance Advice - Entries** report
+  - FS5A02EFTBPAYFileCreateDateFormatted (contains date when the EFT or BPAY register was created, based on the payment type)
+
 ## [2.0.0] - 2024-08-28
   
 Available version: 24.0+
