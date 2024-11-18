@@ -6,6 +6,20 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
   
+## [2.2.0.1] - 2024-09-18 
+  
+Available version: 24.0+
+
+### Fixes
+- Only the last entry from the flow that was started as the last should be marked as **Current**.
+
+## [2.1.0] - 2024-09-12
+  
+Available version: 24.0+
+
+### Fixes
+- Permission improvements for multi-company environments.
+
 ## [2.0.0.2] - 2024-08-26
   
 Available version: 24.0+
