@@ -6,6 +6,23 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [2.2.0] - 2024-10-11
+  
+Available version: 24.0+
+
+### Changes
+- New field **approvalRequired** in **purchaseLines** API.
+
+### Fixes
+- Do not create Power Automate log entries for lines with disabled workflow.
+
+## [2.1.0] - 2024-10-11
+  
+Available version: 24.0+
+
+### Fixes
+- When the workflow is enabled only for selected lines, system was showing errors when sending approval requests. In this release, the lines without the workflow are skipped instead of the error.
+
 ## [2.0.0.1] - 2024-07-31
   
 Available version: 24.0+
