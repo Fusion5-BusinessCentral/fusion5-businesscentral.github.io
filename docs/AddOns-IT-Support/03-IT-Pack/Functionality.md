@@ -120,3 +120,23 @@ There are new helpers available for our projects that make some tasks simpler.
   - SetText(NewText: Text)
   - SetName(NewName: Text)
   - GetText(): Text
+
+### Processing Parameters
+- This module consists of three objects - Codeunit, Temporary Table and Enum.
+- It can be used to pass parameters from the report request page to the processing codeunits. This module allows you to extend request pages and still pass the parameters without writing different setters.
+- How to use
+  - In the report extension, create a global protected variable with the **codeunit 71697648 FS5A03ProcessingParameter** (protected = any reportextension will be able to use the same instance)
+  - Extend **enum 71697631 FS5A03ProcessingParamType** with your report request page values.
+  - Use **codeunit 71697648 FS5A03ProcessingParameter** and the **Set()** procedure to set the value.
+  - Pass the instance of **codeunit 71697648 FS5A03ProcessingParameter** to your processing object and to all events where you want to make it available.
+  - Use **codeunit 71697648 FS5A03ProcessingParameter** and any getter method to get the parameter when needed.
+
+### Export Buffer
+- Module consists of multiple export objects
+  - table 71697634 FS5A03ExportBuffer
+  - table 71697633 FS5A03ExportParameters
+  - table 71697632 FS5A03ExportOutputValues
+  - table 71697635 FS5A03ExportErrorBuffer
+  - page 71697640 FS5A03ExportErrors
+  - codeunit 71697638 FS5A03ExportFile
+- Use this module whenever you need to export data from Business Central and have a generic export solution. Regardless of the source of your input, once the buffer tables are populated, the export logic can be generic.

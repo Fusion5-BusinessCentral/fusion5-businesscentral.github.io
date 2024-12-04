@@ -6,6 +6,18 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [4.2.0] - 2024-12-04
+  
+Available version: 25.0+
+
+### Changes
+- New functionality for bank account validation (AU and NZ formats only).
+- New functionality **Export Buffer** with multiple data type formats (for developers only).
+- New functionality **Processing Parameters** (for developers only).
+
+### Extensibility
+- New event **OnBeforeFetchAuthorizationCode** in **table 71697625 "FS5A03 REST Authentication"**.
+
 ## [4.1.0] - 2024-11-05
   
 Available version: 25.0+
