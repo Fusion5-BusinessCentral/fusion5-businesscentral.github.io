@@ -6,6 +6,17 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
   
+## [4.0.0] - 2024-12-04
+
+Available version: 25.0+
+
+### Changes
+- Minor refactoring of validation logic.
+- **TenantId** is no longer validated in sandbox environments. The **TenantGuid** is still validated in all online environments. After this change, the license created using the production environment information will be valid in all sandbox environment within the same tenant (TenantId is environment-specific).
+
+### Fixes
+- Commit() in the license notification is used only if the transaction type before the notification change was read. If the notification change was invoked from update transaction, the commit is no longer called.
+
 ## [3.4.0] - 2024-10-11
 
 Available version: 24.0+
