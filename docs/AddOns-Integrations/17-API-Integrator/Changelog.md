@@ -6,6 +6,13 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
   
+## [1.6.0] - 2024-12-05
+  
+Available version: 24.0+
+
+### Changes
+- **Posting Description** field in sales and purchase documents was added to the list of fields that preserve the value after the document is inserted.
+
 ## [1.5.0] - 2024-11-11
   
 Available version: 24.0+
