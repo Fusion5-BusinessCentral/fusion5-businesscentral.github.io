@@ -8,8 +8,20 @@ All notable changes to this project will be documented in this file.
  
 **This addon is not yet publicly available**
 
-<!-- ## [1.1.0] - 2024-06-25
+## [2.0.0] - 2024-12-12
   
-Available version: 23+
+Available version: 25.0+
 
-First App-Source version -->
+### Fixes
+- Internal event **OnInitRESTAuthenticationBeforeRetrieveSecret** changed to contain IsHandled
+
+### Changes
+- **Document Attachments** are no longer synchronized when the source document is not synchronized.
+- **Document Attachments** are synchronized only once. Any change to the existing attachment that is already synchronized is not propagated to Xero.
+- **Sales Invoice Header** (Posted Sales Invoice) is synchronized only once. Any change to the existing posted invoice that is already synchronized is not propagated to Xero.
+- **Sales Invoice Header** (Posted Sales Invoice) is synchronized only once. Any change to the existing posted invoice that is already synchronized is not propagated to Xero.
+
+## [1.2.0] - 2024-12-12
+  
+Available version: Hotfix 2.0.0 for 24.0+
+It contains the same changes as described in v 2.0.0
