@@ -1,0 +1,95 @@
+{
+    "name": "Fusion5 ruleset",
+    "rules": [
+        {
+            "id": "AS0081",
+            "action": "None",
+            "justification": "Internals visible"
+        },
+        {
+            "id": "AS0084",
+            "action": "None",
+            "justification": "App-Source range"
+        },
+        {
+            "id": "PTE0012",
+            "action": "None",
+            "justification": "Internals visible"
+        },
+        {
+            "id": "AS0092",
+            "action": "None",
+            "justification": "Application Insights"
+        },
+        {
+            "id": "AS0051",
+            "action": "None",
+            "justification": "App URLs"
+        },
+        {
+            "id": "AS0052",
+            "action": "None",
+            "justification": "App Logo"
+        },
+        {
+            "id": "AS0015",
+            "action": "None",
+            "justification": "Translation file"
+        },
+        {
+            "id": "AA0210",
+            "action": "None",
+            "justification": "Missing key"
+        },
+        {
+            "id": "AA0217",
+            "action": "None",
+            "justification": "Text Constants"
+        },
+        {
+            "id": "AA0231",
+            "action": "None",
+            "justification": "StrSubstNo with text concatenation"
+        },
+        {
+            "id": "AA0470",
+            "action": "None",
+            "justification": "Placeholder explanation"
+        },
+        {
+            "id": "AS0058",
+            "action": "None",
+            "justification": "AssertError"
+        },
+        {
+            "id": "PTE0007",
+            "action": "None",
+            "justification": "AssertError"
+        },
+        {
+            "id": "AA0161",
+            "action": "None",
+            "justification": "AssertError"
+        },
+        {
+            "id": "AA0139",
+            "action": "None",
+            "justification": "Short text"
+        },
+        {
+            "id": "AL0749",
+            "action": "None",
+            "justification": "Internal accessibility"
+        },
+        {
+            "id": "AS0103",
+            "action": "None",
+            "justification": "Missing permissionsets"
+        },
+        {
+            "id": "PTE0004",
+            "action": "None",
+            "justification": "Missing permissionsets"
+        }
+    ]
+}
