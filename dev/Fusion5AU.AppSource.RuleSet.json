@@ -7,6 +7,11 @@
             "justification": "Set as warning: To improve readability the name of variables and parameters must be suffixed with the type or object name."
         },
         {
+            "id": "AA0248",
+            "action": "None",
+            "justification": "Disable: 'This' keyword is currently broken and we are not using it."
+        },
+        {
             "id": "AS0081",
             "action": "None",
             "justification": "Disable: The InternalsVisibleTo setting will expose your internal objects to any extension..."
@@ -307,9 +312,149 @@
             "justification": "Set as error: Enum values must have non-empty a Caption to be selectable in the client."
         },
         {
+            "id": "LC0058",
+            "action": "Error",
+            "justification": "Set as error: PageVariable.SetRecord(): You cannot use a temporary record for the Record parameter."
+        },
+        {
+            "id": "LC0059",
+            "action": "Error",
+            "justification": "Set as error: Single quote escaping issue detected."
+        },
+        {
+            "id": "LC0060",
+            "action": "Warning",
+            "justification": "Set as warning: The ApplicationArea property is not applicable to API pages."
+        },
+        {
+            "id": "LC0061",
+            "action": "Warning",
+            "justification": "Set as warning: Pages of type API must have the ODataKeyFields property set to the SystemId field."
+        },
+        {
+            "id": "LC0062",
+            "action": "Warning",
+            "justification": "Set as warning: Mandatory field is missing on API page."
+        },
+        {
+            "id": "LC0063",
+            "action": "Warning",
+            "justification": "Set as warning: Consider naming field with a more descriptive name."
+        },
+        {
+            "id": "LC0064",
+            "action": "Warning",
+            "justification": "Set as warning: Missing ToolTip property on table field."
+        },
+        {
+            "id": "LC0065",
+            "action": "None",
+            "justification": "Set as warning: Event subscriber var keyword mismatch."
+        },
+        {
+            "id": "LC0066",
+            "action": "None",
+            "justification": "Set as warning: Duplicate ToolTip between page and table field."
+        },
+        {
+            "id": "LC0067",
+            "action": "Error",
+            "justification": "Error: Set NotBlank property to false when 'No. Series' TableRelation exists."
+        },
+        {
             "id": "LC0068",
             "action": "None",
             "justification": "Disable: The current object is missing indirect permissions permissions."
+        },
+        {
+            "id": "LC0069",
+            "action": "None",
+            "justification": "Disable: Empty statements should be avoided or should have a leading or trailing comment explaining their use."
+        },
+        {
+            "id": "LC0070",
+            "action": "Error",
+            "justification": "Error: Zero index access on 1-based List objects."
+        },
+        {
+            "id": "LC0071",
+            "action": "Error",
+            "justification": "Error: Incorrect 'IsHandled' parameter assignment."
+        },
+        {
+            "id": "LC0072",
+            "action": "Warning",
+            "justification": "Warning: The documentation comment must match the procedure syntax."
+        },
+        {
+            "id": "LC0073",
+            "action": "Error",
+            "justification": "Error: Handled parameters in event signatures should be passed by var."
+        },
+        {
+            "id": "LC0074",
+            "action": "Error",
+            "justification": "Error: Set values for FlowFilter fields using filtering methods."
+        },
+        {
+            "id": "LC0075",
+            "action": "Error",
+            "justification": "Error: Incorrect number or type of arguments in .Get() method on Record object."
+        },
+        {
+            "id": "LC0076",
+            "action": "Error",
+            "justification": "Error: The field with table relation should have at least the same length as the referenced field."
+        },
+        {
+            "id": "LC0077",
+            "action": "Warning",
+            "justification": "Warning: Methods should always be called with parenthesis."
+        },
+        {
+            "id": "LC0078",
+            "action": "Error",
+            "justification": "Error: Temporary records should not trigger table triggers."
+        },
+        {
+            "id": "LC0079",
+            "action": "Warning",
+            "justification": "Warning: Event publishers should not be public."
+        },
+        {
+            "id": "LC0080",
+            "action": "Error",
+            "justification": "Error: Replace double quotes in JPath expressions with two single quotes."
+        },
+        {
+            "id": "LC0081",
+            "action": "Warning",
+            "justification": "Warning: Use Rec.IsEmpty() for checking record existence."
+        },
+        {
+            "id": "LC0082",
+            "action": "Warning",
+            "justification": "Warning: Use Rec.Find('-') with Rec.Next() for checking exactly one record."
+        },
+        {
+            "id": "LC0083",
+            "action": "Warning",
+            "justification": "Warning: Use new Date/Time/DateTime methods for extracting parts."
+        },
+        {
+            "id": "LC0084",
+            "action": "None",
+            "justification": "Disable: Use return value for better error handling."
+        },
+        {
+            "id": "LC0085",
+            "action": "Warning",
+            "justification": "Warning: Use the (CR)LFSeparator from the Type Helper codeunit."
+        },
+        {
+            "id": "LC0086",
+            "action": "Warning",
+            "justification": "Warning: Use the new PageStyle datatype instead string literals."
         }
     ]
 }

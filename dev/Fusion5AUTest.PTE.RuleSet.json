@@ -2,6 +2,49 @@
     "name": "Fusion5 ruleset",
     "rules": [
         {
+            "id": "AL0749",
+            "action": "None",
+            "justification": "Internal accessibility"
+        },
+        {
+            "id": "AA0139",
+            "action": "None",
+            "justification": "Short text"
+        },
+        {
+            "id": "AA0161",
+            "action": "None",
+            "justification": "AssertError"
+        },
+        {
+            "id": "AA0210",
+            "action": "None",
+            "justification": "Missing key"
+        },
+        {
+            "id": "AA0217",
+            "action": "None",
+            "justification": "Text Constants"
+        },
+        {
+            "id": "AA0231",
+            "action": "None",
+            "justification": "StrSubstNo with text concatenation"
+        },
+        {
+            "id": "AA0248",
+            "action": "None",
+            "justification": "Disable: 'This' keyword is currently broken and we are not using it."
+        },
+        {
+            "id": "AA0470",
+            "action": "None",
+            "justification": "Placeholder explanation"
+        },
+
+
+
+        {
             "id": "AS0081",
             "action": "None",
             "justification": "Internals visible"
@@ -10,11 +53,6 @@
             "id": "AS0084",
             "action": "None",
             "justification": "App-Source range"
-        },
-        {
-            "id": "PTE0012",
-            "action": "None",
-            "justification": "Internals visible"
         },
         {
             "id": "AS0092",
@@ -37,29 +75,14 @@
             "justification": "Translation file"
         },
         {
-            "id": "AA0210",
-            "action": "None",
-            "justification": "Missing key"
-        },
-        {
-            "id": "AA0217",
-            "action": "None",
-            "justification": "Text Constants"
-        },
-        {
-            "id": "AA0231",
-            "action": "None",
-            "justification": "StrSubstNo with text concatenation"
-        },
-        {
-            "id": "AA0470",
-            "action": "None",
-            "justification": "Placeholder explanation"
-        },
-        {
             "id": "AS0058",
             "action": "None",
             "justification": "AssertError"
+        },
+        {
+            "id": "PTE0004",
+            "action": "None",
+            "justification": "Missing permissionsets"
         },
         {
             "id": "PTE0007",
@@ -67,29 +90,14 @@
             "justification": "AssertError"
         },
         {
-            "id": "AA0161",
-            "action": "None",
-            "justification": "AssertError"
-        },
-        {
-            "id": "AA0139",
-            "action": "None",
-            "justification": "Short text"
-        },
-        {
-            "id": "AL0749",
-            "action": "None",
-            "justification": "Internal accessibility"
-        },
-        {
             "id": "AS0103",
             "action": "None",
             "justification": "Missing permissionsets"
         },
         {
-            "id": "PTE0004",
+            "id": "PTE0012",
             "action": "None",
-            "justification": "Missing permissionsets"
+            "justification": "Internals visible"
         }
     ]
 }
