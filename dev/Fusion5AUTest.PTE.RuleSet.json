@@ -41,9 +41,26 @@
             "action": "None",
             "justification": "Placeholder explanation"
         },
-
-
-
+        {
+            "id": "AS0015",
+            "action": "None",
+            "justification": "Translation file"
+        },
+        {
+            "id": "AS0051",
+            "action": "None",
+            "justification": "App URLs"
+        },
+        {
+            "id": "AS0052",
+            "action": "None",
+            "justification": "App Logo"
+        },
+        {
+            "id": "AS0058",
+            "action": "None",
+            "justification": "AssertError"
+        },
         {
             "id": "AS0081",
             "action": "None",
@@ -60,24 +77,9 @@
             "justification": "Application Insights"
         },
         {
-            "id": "AS0051",
+            "id": "AS0103",
             "action": "None",
-            "justification": "App URLs"
-        },
-        {
-            "id": "AS0052",
-            "action": "None",
-            "justification": "App Logo"
-        },
-        {
-            "id": "AS0015",
-            "action": "None",
-            "justification": "Translation file"
-        },
-        {
-            "id": "AS0058",
-            "action": "None",
-            "justification": "AssertError"
+            "justification": "Missing permissionsets"
         },
         {
             "id": "PTE0004",
@@ -88,11 +90,6 @@
             "id": "PTE0007",
             "action": "None",
             "justification": "AssertError"
-        },
-        {
-            "id": "AS0103",
-            "action": "None",
-            "justification": "Missing permissionsets"
         },
         {
             "id": "PTE0012",
