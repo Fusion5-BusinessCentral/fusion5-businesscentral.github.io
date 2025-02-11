@@ -136,7 +136,7 @@ You can post the payment receipt directly from the **Direct Debit Collections** 
 |Direct Debit Collection No. | Specify the direct debit collection that you want to post payment receipt for. |
 |General Journal Template | Specify which general journal template to use for posting the payment receipt, such as the template for cash receipts. |
 |General Journal Batch Name | Specify which general journal batch to use for posting the payment receipt. |
-|Create Journal Only | Select this check box if you don't want to post the payment receipt when you choose the OK button. The payment receipt will be prepared in the specified journal and won't be posted until someone posts the journal lines in question. |
+|Create Journal Only | Select this check box if you don't want to post the payment receipt when you choose the **OK** button. The payment receipt will be prepared in the specified journal and won't be posted until someone posts the journal lines in question. |
 
-5. Choose the OK button.
-6. If “Create Journal Only” is disabled above, Direct Debit Collection status will be updated to Posted
+5. Choose the **OK** button.
+6. If **“Create Journal Only”** is disabled above, Direct Debit Collection status will be updated to Posted
