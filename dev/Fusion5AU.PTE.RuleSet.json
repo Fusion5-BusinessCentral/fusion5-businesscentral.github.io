@@ -433,8 +433,8 @@
         },
         {
             "id": "LC0082",
-            "action": "Warning",
-            "justification": "Warning: Use Rec.Find('-') with Rec.Next() for checking exactly one record."
+            "action": "None",
+            "justification": "Disable: Use Rec.Find('-') with Rec.Next() for checking exactly one record."
         },
         {
             "id": "LC0083",
