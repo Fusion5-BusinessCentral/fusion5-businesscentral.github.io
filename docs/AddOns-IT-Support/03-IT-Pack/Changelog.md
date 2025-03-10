@@ -6,6 +6,65 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [4.4.0] - 2025-03-10
+  
+Available version: 25.0+
+
+### Changes
+- Minor refactoring based on new LinterCop rules (fieldgroups, code formatting)
+
+### Obsoleted Functionality (will be removed in 28.0)
+- Import Attachments
+  - The **Import Attachment** functionality will be removed from the **IT Pack**. It will be moved to a different extension published later this month specifically designed for improvements for data export/import. 
+  - **RECOMMENDATION** - Contact Fusion5 if you are interested in this functionality to get details about new extension. Existing Fusion5 customers that had this functionality provided as part of the project will get the new extension automatically.
+
+## [4.3.0] - 2025-01-16
+  
+Available version: 25.0+
+
+### Changes
+- New procedures for **Export Error Buffer** table that can improve error handling in custom export functions:
+  - InsertErrorIfEqual(NewParentEntryNo: Integer; FieldCaption: Text; VariantToValidate: Variant; ExpectedValueVariant: Variant)
+  - InsertErrorIfNotEqual(NewParentEntryNo: Integer; FieldCaption: Text; VariantToValidate: Variant; ExpectedValueVariant: Variant)
+  - InsertErrorIfSmaller(NewParentEntryNo: Integer; FieldCaption: Text; ValueToValidate: Decimal; MinValue: Decimal)
+  - InsertErrorIfBigger(NewParentEntryNo: Integer; FieldCaption: Text; ValueToValidate: Decimal; MaxValue: Decimal)
+  - InsertErrorIfShorter(NewParentEntryNo: Integer; FieldCaption: Text; TextToValidate: Text; MinLength: Integer)
+  - InsertErrorIfLonger(NewParentEntryNo: Integer; FieldCaption: Text; TextToValidate: Text; MaxLength: Integer)
+  - SetAllowedTextCharacters(NewAllowedCharacters: Text)
+  - TestExportWriteText(NewParentEntryNo: Integer; FieldCaption: Text; ContentText: Text)
+  - TestExportWriteText(NewParentEntryNo: Integer; FieldCaption: Text; ContentText: Text; Length: Integer)
+  - TestExportWrite(NewParentEntryNo: Integer; FieldCaption: Text; ContentVariant: Variant; ExportDataType: Enum FS5A03ExportDataType)
+  - TestExportWriteDate(NewParentEntryNo: Integer; FieldCaption: Text; Date: Date): Text
+  - TestExportWriteDate(NewParentEntryNo: Integer; FieldCaption: Text; Date: Date; DateFormat: Text): Text
+  - TestExportWriteDate(NewParentEntryNo: Integer; FieldCaption: Text; Date: Date; DateFormat: Text; Length: Integer): Text
+  - TestExportWriteDateTime(NewParentEntryNo: Integer; FieldCaption: Text; DateTime: DateTime; DateTimeFormat: Text; Length: Integer): Text
+  - TestExportWrite(NewParentEntryNo: Integer; FieldCaption: Text; ContentVariant: Variant; ExportDataType: Enum FS5A03ExportDataType; Length: Integer)
+  - TryWriteText(ContentText: Text)
+  - TryWriteText(ContentText: Text; Length: Integer)
+  - TryWrite(ContentVariant: Variant; ExportDataType: Enum FS5A03ExportDataType)
+  - TryWriteDate(Date: Date)
+  - TryWriteDate(Date: Date; DateFormat: Text)
+  - TryWriteDate(Date: Date; DateFormat: Text; Length: Integer)
+  - TryWriteDateTime(DateTime: DateTime; DateTimeFormat: Text; Length: Integer)
+  - TryWrite(ContentVariant: Variant; ExportDataType: Enum FS5A03ExportDataType; Length: Integer)
+- New procedures in **Processing Parameter** codeunit:
+  - GetAsCode20(ProcessingParamType: Enum FS5A03ProcessingParamType; var ParameterValue: Code[20]): Boolean
+  - GetAsDateFormula(ProcessingParamType: Enum FS5A03ProcessingParamType; var ParameterValue: DateFormula): Boolean
+
+### Obsoleted Functionality (will be removed in 27.0)
+- Job Queue Notification functionality
+  - Fields in **Job Queue Category**
+    - **Notify on Error**
+    - **Notify on Success**
+    - **Notification E-Mails**
+  - Action **Excluded Error Notifications** in **Job Queue Category List**
+  - Table & page **Excluded Job Queue Error Notifications**
+  - Codeunit **Job Queue Management**
+  - **RECOMMENDATION** - Use standard functionality using Power Automate added in Business Central 2024 wave 1.
+
+### Fixes
+- Fixed an issue where files imported from a ZIP file were incorrectly assigned to corresponding Business Central records due to remnants of the previous file in the filestream.
+
 ## [4.2.0] - 2024-12-04
   
 Available version: 25.0+
