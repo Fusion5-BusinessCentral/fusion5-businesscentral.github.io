@@ -6,6 +6,16 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
   
+## [4.1.0] - 2025-01-17
+
+Available version: 25.0+
+
+### Changes
+- Documentation for developers (param & return value) improved in the Licensing Management codeunit.
+
+### Fixes
+- License Validation is now called only when the ExecutionContext is Normal (skipping license validation during installation and upgrades). This fix resolves issues with standard Microsoft updates that ended with licensing error.
+
 ## [4.0.0] - 2024-12-04
 
 Available version: 25.0+
