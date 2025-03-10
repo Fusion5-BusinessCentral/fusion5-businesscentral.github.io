@@ -6,17 +6,127 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
  
+## [4.2.0] - 2025-02-03
+  
+Available version: 25.0+
+
+### Changes
+- Minor refactoring to improve dev experience.
+- **Bundles**
+  - New functionality that allows to create **Bundles**. Bundles can link multiple sales lines together. Bundles can be configured to print one line in all reports that support bundles (depends on the layout). For example, you can use one item line and multiple G/L Account lines (for internal purposes) and still print only one line in all reports (invoice, order confirmation etc.) with the sum of all amounts (and quantity/weight based on the bundle configuration).
+  - **Bundles in this version do not have ANY automation or validations!**
+  - From the user perspective, bundles added:
+    - Table & Page **Bundle List**
+    - Fields in **Posted Sales Credit Memo, Invoice, Return Receipt & Shipment** and in open documents **Order, Invoice, Credit Memo & Return Order** (all fields are hidden by default)
+      - **Bundle Code**
+        - Specifies what bundle definition should be used.
+      - **Bundle Line No.**  
+        - Specifies the parent line number.
+- New Fusion5 layouts (use these layouts if you need Bundles) 
+  - Sales Credit Note with Bundles (Fusion5: Document Pack - Australia)
+  - Sales Draft Invoice with Bundles (Fusion5: Document Pack - Australia)
+  - Sales Invoice with Bundles (Fusion5: Document Pack - Australia)
+  - Sales Order Confirmation with Bundles (Fusion5: Document Pack - Australia)
+  - Sales Pro Forma Invoice with Bundles (Fusion5: Document Pack - Australia)
+  - Sales Quote with Bundles (Fusion5: Document Pack - Australia)
+  - Sales Shipment with Bundles (Fusion5: Document Pack - Australia)
+- New columns in **Standard Sales - Credit Memo**, **Standard Sales - Draft Invoice**, **Standard Sales - Invoice**, **Standard Sales - Order Conf.**, **Standard Sales - Pro Forma Inv**, **Standard Sales - Quote**, **Standard Sales - Shipment** reports
+  - FS5A08BundleLineNo
+  - FS5A08BundleType
+  - FS5A08BundleNo
+  - FS5A08BundleDescription
+  - FS5A08BundleQuantity
+  - FS5A08BundleUnitOfMeasureCode
+  - FS5A08BundleNetWeight
+  - FS5A08BundleGrossWeight
+  - FS5A08BundleJobNo
+  - FS5A08BundleJobTaskNo
+  - FS5A08BundleUnitPrice
+  - FS5A08BundleAmountExcludingVAT
+  - FS5A08BundleAmountIncludingVAT
+  - FS5A08BundleTaxAmount
+  - FS5A08BundleLineDiscountAmount
+
+## [4.1.0.3] - 2025-01-29
+  
+Available version: 25.0+
+
+### Changes
+- New option **Show Blank Value for Zero Value** in **Formatted Report Columns**. If enabled (for decimal or integer field), the field shows blank value instead of 0.
+- Added inherent permissions when running reports (and or relevant procedures).
+
+## [4.0.0] - 2025-01-21
+  
+Available version: 25.0+
+ 
+### Changes
+- Minor refactoring based on new suggestions from LinterCop (FieldGroups, code updates)
+- **Formatted Report Columns**
+  - New functionality that allows to configure formats for report columns (for columns that support it).
+  ![image.png](./img/FormattedReportColumns.png)
+  - Support for this functionality was added to all existing reports and most of the fields (except image fields & constant fields).
+  - New setup fields in **Report Setup**
+    - **Quantity Columns Decimal Places**
+    - **Percentage Columns Decimal Places**
+    - **Weight Columns Decimal Places**
+      - These fields are used when the **Auto Format** field in **Formatted Report Columns** is set to **Percentage**, **Quantity** or **Weight**
+- New columns in **Standard Statement** report
+  - FS5A08StartDate
+  - FS5A08EndDate
+  - FS5A08DebitAmount_DtldCustLedgEntries
+  - FS5A08CreditAmount_DtldCustLedgEntries
+  - FS5A08DebitAmount_CustLedgEntry2
+  - FS5A08CreditAmount_CustLedgEntry2
+- New columns in **Standard Sales - Credit Memo** report
+  - FS5A08PostingDate
+  - FS5A08PaymentTermsCode
+  - FS5A08ShipmentMethodCode
+  - FS5A08PaymentMethodCode
+  - FS5A08LocationCode
+  - FS5A08DocumentDate
+  - FS5A08LineDiscountPercent
+- New columns in **Standard Sales - Draft Invoice** report
+  - FS5A08DocumentDate
+  - FS5A08LineDiscountPercent
+- New columns in **Standard Sales - Invoice** report
+  - FS5A08OrderDate
+  - FS5A08PostingDate
+  - FS5A08ShipmentMethodCode
+  - FS5A08PaymentMethodCode
+  - FS5A08LocationCode
+  - FS5A08DocumentDate
+  - FS5A08LineDiscountPercent
+- New columns in **Standard Sales - Order Conf.** report
+  - FS5A08DocumentDate
+  - FS5A08LineDiscountPercent
+- New columns in **Standard Sales - Pro Forma Inv** report
+  - FS5A08DocumentDate
+  - FS5A08LineDiscountPercent
+- New columns in **Standard Sales - Quote** report
+  - FS5A08DocumentDate
+  - FS5A08LineDiscountPercent
+- New columns in **Standard Sales - Shipment** report
+  - FS5A08PostingDate
+  - FS5A08DocumentDate
+
+### Fixes
+- Temporary fix to skip license validation when sending customer receipt within upgrade/install execution context. Will be removed once the change to skip license validation in upgrade/install logic is implemented.
+
+### Obsoleted Functionality (will be removed in 27.0)
+- There are no obsoleted functions from the user's perspective.
+- All procedures from **codeunit 71697667 "FS5A08 Format Document"**. Replaced by more advanced and configurable **Formatted Report Columns** functionality.
+
 ## [3.5.0.1] - 2024-11-10
   
 Available version: 24.0+
-
-### Fixes
-- **Remittance Advice - Entries** did not show the logo if multiple documents for the same vendor were printed.
 
 ### Changes
 - **General Ledger Entries** now have Global and Shortcut Dimension Names (by default, only Codes are available).
 - New columns in **Remittance Advice - Entries** report
   - FS5A08OurAccountNo
+
+### Fixes
+- **Remittance Advice - Entries** did not show the logo if multiple documents for the same vendor were printed.
 
 ## [3.4.0] - 2024-10-17
   
