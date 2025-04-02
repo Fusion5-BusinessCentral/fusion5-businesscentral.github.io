@@ -6,6 +6,17 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [4.5.0] - 2025-03-10
+  
+Available version: 25.0+
+
+### Changes
+- Added **page 71697641 FS5A03JsonViewer** FactBox that uses custom ControlAddin to show formatted Json objects.
+- Added **enum 71697632 FS5A03TextEncoding**
+- **FormatBranchNumber()** function in **71697643 FS5A03FormatBankAccount** changed from **BranchNo: Text[10]** to **BranchNo: Text[20]**
+- Updated telemetry to use functionality from the **Licensing App** version 4.2
+- Added new events to track usage of different functionalities from the IT Pack.
+
 ## [4.4.0] - 2025-03-10
   
 Available version: 25.0+

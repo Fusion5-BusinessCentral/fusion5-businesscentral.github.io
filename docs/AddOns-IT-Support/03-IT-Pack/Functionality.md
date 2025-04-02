@@ -140,3 +140,9 @@ There are new helpers available for our projects that make some tasks simpler.
   - page 71697640 FS5A03ExportErrors
   - codeunit 71697638 FS5A03ExportFile
 - Use this module whenever you need to export data from Business Central and have a generic export solution. Regardless of the source of your input, once the buffer tables are populated, the export logic can be generic.
+
+### Json Viewer
+- Json Viewer is a FactBox (**page 71697641 FS5A03JsonViewer**) that can be used to show formatted Json Object. Formatting is done using custom **controladdin FS5A03JsonViewer** that is based on **JSONViewer - by Roman Makudera 2016 (c) MIT licence**
+
+### Text Encoding enum
+- **enum 71697632 FS5A03TextEncoding**. It does not have any additional functionality and can be used as a field whenever you want users allow to select encoding.

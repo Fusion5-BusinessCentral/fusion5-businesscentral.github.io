@@ -98,3 +98,8 @@ External publisher must
   - The procedure must return a record in temporary **table 71697596 "FS5 Remote License"** with information about the license. If the license is not valid, the procedure must return false or raise a custom error.
 2) Subscribe to **OnRegisterVerificationServices()** in **Codeunit 71697599 "FS5 Verification Service Mgt."**
 3) Call the **RegisterVerificationService()** procedure in **Codeunit 71697599 "FS5 Verification Service Mgt."** from the subscribe
+
+### Telemetry
+
+This extension can be used as repository for telemetry signals. 
+Developers can extend **enum 71697592 FS5Fusion5TelemetryEvent** with their events and use **codeunit 71698206 FS5Fusion5TelemetryHandler** to register the event + log usage/error. When logging using this function, system automatically adds additional details such as CallStack or information about registered event.

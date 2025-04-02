@@ -6,6 +6,14 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
   
+## [4.1.0] - 2025-04-01
+
+Available version: 25.0+
+
+### Changes
+- Missing FieldGroups added to the most of the tables.
+- Added a new module for managing Fusion5 telemetry events.
+
 ## [4.1.0] - 2025-01-17
 
 Available version: 25.0+
