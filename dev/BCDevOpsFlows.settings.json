@@ -1,0 +1,23 @@
+{
+    "appFolders": [
+      "App"
+    ],
+    "testFolders": [
+      "Test"
+    ],
+    "enableExternalRulesets": true,
+    "customCodeCops": [
+      "https://github.com/StefanMaron/BusinessCentral.LinterCop/releases/latest/download/BusinessCentral.LinterCop.dll"
+    ],
+    "writableFolderPath": "C:\\_BCFusion5Apps",
+    "versioningStrategy": 2,
+    "artifactUrlCacheKeepHours": 10,
+    "pipelineFolderStructure": "Path",
+    "pipelineFolderPath": "MyFolder",
+    "pipelineBranch": "TKA-dev",
+    "pipelineSkipFirstRun": true,
+    "BCDevOpsFlowsPoolName": "AzureF5BCDemo3",
+    "BCDevOpsFlowsResourceRepositoryName": "TKapitan/BCDevOpsFlows",
+    "BCDevOpsFlowsServiceConnectionName": "BCDevOpsFlowsServiceConnection",
+    "BCDevOpsFlowsResourceRepositoryBranch": "dev#93-loadexternalsetup"
+}
