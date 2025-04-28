@@ -19,5 +19,6 @@
   "BCDevOpsFlowsPoolName": "BCDevOpsBuilds",
   "BCDevOpsFlowsResourceRepositoryName": "TKapitan/BCDevOpsFlows",
   "BCDevOpsFlowsServiceConnectionName": "BCDevOpsFlowsServiceConnection",
-  "BCDevOpsFlowsResourceRepositoryBranch": "preview"
+  "BCDevOpsFlowsResourceRepositoryBranch": "preview",
+  "BCDevOpsFlowsVariableGroup": "BCDevOpsFlows"
 }
