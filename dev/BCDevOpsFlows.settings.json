@@ -11,13 +11,12 @@
     ],
     "writableFolderPath": "C:\\_BCFusion5Apps",
     "versioningStrategy": 2,
-    "artifactUrlCacheKeepHours": 10,
-    "pipelineFolderStructure": "Path",
-    "pipelineFolderPath": "MyFolder",
-    "pipelineBranch": "TKA-dev",
+    "artifactUrlCacheKeepHours": 12,
+    "pipelineFolderStructure": "Repository",
+    "pipelineBranch": "test",
     "pipelineSkipFirstRun": true,
-    "BCDevOpsFlowsPoolName": "AzureF5BCDemo3",
+    "BCDevOpsFlowsPoolName": "BCDevOpsBuilds",
     "BCDevOpsFlowsResourceRepositoryName": "TKapitan/BCDevOpsFlows",
     "BCDevOpsFlowsServiceConnectionName": "BCDevOpsFlowsServiceConnection",
-    "BCDevOpsFlowsResourceRepositoryBranch": "dev#93-loadexternalsetup"
+    "BCDevOpsFlowsResourceRepositoryBranch": "preview"
 }
