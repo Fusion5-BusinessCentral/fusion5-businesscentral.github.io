@@ -17,6 +17,8 @@
   "pipelineBranch": "test",
   "pipelineSkipFirstRun": true,
   "BCDevOpsFlowsPoolName": "BCDevOpsBuilds",
+  "BCDevOpsFlowsPoolNameCICD": "BCDevOpsBuildsCICD",
+  "BCDevOpsFlowsPoolNamePublishToProd": "BCDevOpsBuildsPublishToProd",
   "BCDevOpsFlowsResourceRepositoryName": "TKapitan/BCDevOpsFlows",
   "BCDevOpsFlowsServiceConnectionName": "BCDevOpsFlowsServiceConnection",
   "BCDevOpsFlowsResourceRepositoryBranch": "preview",
