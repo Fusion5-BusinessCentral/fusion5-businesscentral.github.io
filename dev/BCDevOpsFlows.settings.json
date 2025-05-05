@@ -12,6 +12,7 @@
   "enablePerTenantExtensionCop": true,
   "removeInternalsVisibleTo": false,
   "overrideResourceExposurePolicy": false,
+  "failPublishTestsOnFailureToPublishResults": true,
   "cacheImageName": "",
   "writableFolderPath": "C:\\_BCFusion5Apps",
   "versioningStrategy": 2,
