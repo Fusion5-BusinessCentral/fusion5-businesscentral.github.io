@@ -6,9 +6,10 @@
     "Test"
   ],
   "enableExternalRulesets": true,
-  "customCodeCops": [
-    "https://github.com/StefanMaron/BusinessCentral.LinterCop/releases/latest/download/BusinessCentral.LinterCop.dll"
-  ],
+  "enableCodeCop": true,
+  "enableUICop": true,
+  "enableAppSourceCop": true,
+  "enablePerTenantExtensionCop": true,
   "cacheImageName": "",
   "writableFolderPath": "C:\\_BCFusion5Apps",
   "versioningStrategy": 2,
@@ -26,14 +27,36 @@
   "ConditionalSettings": [
     {
       "workflows": [
-        "CICD",
-        "TestNextMinor",
-        "TestNextMajor",
-        "TestCurrent"
+        "PullRequest"
       ],
       "settings": {
-        "customCodeCops": [],
+        "customCodeCops": [
+          "https://github.com/StefanMaron/BusinessCentral.LinterCop/releases/latest/download/BusinessCentral.LinterCop.dll"
+        ],
         "removeInternalsVisibleTo": false
+      }
+    },
+    {
+      "workflows": [
+        "TestCurrent",
+        "TestNextMinor",
+        "TestNextMajor"
+      ],
+      "settings": {
+        "removeInternalsVisibleTo": false
+      }
+    },
+    {
+      "workflows": [
+        "CICD",
+        "PublishToProd"
+      ],
+      "settings": {
+        "removeInternalsVisibleTo": true,
+        "enableCodeCop": false,
+        "enableUICop": false,
+        "enableAppSourceCop": false,
+        "enablePerTenantExtensionCop": false
       }
     }
   ]
