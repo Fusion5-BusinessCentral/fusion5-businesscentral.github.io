@@ -10,6 +10,8 @@
   "enableUICop": true,
   "enableAppSourceCop": true,
   "enablePerTenantExtensionCop": true,
+  "removeInternalsVisibleTo": false,
+  "overrideResourceExposurePolicy": false,
   "cacheImageName": "",
   "writableFolderPath": "C:\\_BCFusion5Apps",
   "versioningStrategy": 2,
@@ -32,18 +34,7 @@
       "settings": {
         "customCodeCops": [
           "https://github.com/StefanMaron/BusinessCentral.LinterCop/releases/latest/download/BusinessCentral.LinterCop.dll"
-        ],
-        "removeInternalsVisibleTo": false
-      }
-    },
-    {
-      "workflows": [
-        "TestCurrent",
-        "TestNextMinor",
-        "TestNextMajor"
-      ],
-      "settings": {
-        "removeInternalsVisibleTo": false
+        ]
       }
     },
     {
@@ -56,7 +47,12 @@
         "enableCodeCop": false,
         "enableUICop": false,
         "enableAppSourceCop": false,
-        "enablePerTenantExtensionCop": false
+        "enablePerTenantExtensionCop": false,
+        "overrideResourceExposurePolicy": true,
+        "allowDebugging": true,
+        "allowDownloadingSource": false,
+        "includeSourceInSymbolFile": false,
+        "applyToDevExtension": true
       }
     }
   ]
