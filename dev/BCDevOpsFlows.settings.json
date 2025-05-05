@@ -22,5 +22,19 @@
   "BCDevOpsFlowsResourceRepositoryName": "TKapitan/BCDevOpsFlows",
   "BCDevOpsFlowsServiceConnectionName": "BCDevOpsFlowsServiceConnection",
   "BCDevOpsFlowsResourceRepositoryBranch": "preview",
-  "BCDevOpsFlowsVariableGroup": "BCDevOpsFlows"
+  "BCDevOpsFlowsVariableGroup": "BCDevOpsFlows",
+  "ConditionalSettings": [
+    {
+      "workflows": [
+        "CICD",
+        "TestNextMinor",
+        "TestNextMajor",
+        "TestCurrent"
+      ],
+      "settings": {
+        "customCodeCops": [],
+        "removeInternalsVisibleTo": false
+      }
+    }
+  ]
 }
