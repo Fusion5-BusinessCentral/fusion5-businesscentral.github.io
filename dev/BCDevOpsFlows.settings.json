@@ -32,6 +32,7 @@
         "PullRequest"
       ],
       "settings": {
+        "artifact": "////latest",
         "customCodeCops": [
           "https://github.com/StefanMaron/BusinessCentral.LinterCop/releases/latest/download/BusinessCentral.LinterCop.dll"
         ]
@@ -43,6 +44,8 @@
         "PublishToProd"
       ],
       "settings": {
+        "artifact": "////latest",
+        "testFolders": [],
         "removeInternalsVisibleTo": true,
         "enableCodeCop": false,
         "enableUICop": false,
@@ -53,6 +56,102 @@
         "allowDownloadingSource": false,
         "includeSourceInSymbolFile": false,
         "applyToDevExtension": true
+      }
+    },
+    {
+      "workflows": [
+        "CICD"
+      ],
+      "settings": {
+        "workflowTrigger": {
+          "batch": true,
+          "branches": {
+            "include": [
+              "test",
+              "preview"
+            ]
+          },
+          "paths": {
+            "exclude": [
+              ".azure-pipelines"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "workflows": [
+        "PublishToProd"
+      ],
+      "settings": {
+        "workflowTrigger": {
+          "batch": true,
+          "branches": {
+            "include": [
+              "main",
+              "master"
+            ]
+          },
+          "paths": {
+            "exclude": [
+              ".azure-pipelines"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "workflows": [
+        "TestCurrent"
+      ],
+      "settings": {
+        "artifact": "////latest",
+        "workflowSchedule": {
+          "cron": "0 2 * * 4",
+          "displayName": "Every Thursday at 2am",
+          "branches": {
+            "include": [
+              "main",
+              "master"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "workflows": [
+        "TextNextMinor"
+      ],
+      "settings": {
+        "artifact": "////nextminor",
+        "workflowSchedule": {
+          "cron": "0 2 5 * *",
+          "displayName": "Fifth of every month",
+          "branches": {
+            "include": [
+              "main",
+              "master"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "workflows": [
+        "TestNextMajor"
+      ],
+      "settings": {
+        "artifact": "////nextmajor",
+        "workflowSchedule": {
+          "cron": "0 2 15 * *",
+          "displayName": "Fifteenth of every month",
+          "branches": {
+            "include": [
+              "main",
+              "master"
+            ]
+          }
+        }
       }
     }
   ]
