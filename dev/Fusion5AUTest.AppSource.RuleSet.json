@@ -17,6 +17,16 @@
             "justification": "AssertError"
         },
         {
+            "id": "AA0175",
+            "action": "None",
+            "justification": "Only find record if you need to use it."
+        },
+        {
+            "id": "AA0181",
+            "action": "None",
+            "justification": "The FindSet() or Find() methods must be used only in connection with the Next() method"
+        },
+        {
             "id": "AA0210",
             "action": "None",
             "justification": "Missing key"
@@ -34,7 +44,7 @@
         {
             "id": "AA0248",
             "action": "None",
-            "justification": "Disable: 'This' keyword is currently broken and we are not using it."
+            "justification": "'this' keyword"
         },
         {
             "id": "AA0470",
