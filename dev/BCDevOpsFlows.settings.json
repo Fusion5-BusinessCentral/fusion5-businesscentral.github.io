@@ -30,40 +30,21 @@
   "ConditionalSettings": [
     {
       "workflows": [
-        "PullRequest"
+        "CICD"
       ],
       "settings": {
         "artifact": "////latest",
-        "customCodeCops": [
-          "https://github.com/StefanMaron/BusinessCentral.LinterCop/releases/latest/download/BusinessCentral.LinterCop.dll"
-        ]
-      }
-    },
-    {
-      "workflows": [
-        "CICD",
-        "PublishToProd"
-      ],
-      "settings": {
-        "artifact": "////latest",
-        "testFolders": [],
+        "customCodeCops": [],
         "removeInternalsVisibleTo": true,
-        "enableCodeCop": false,
-        "enableUICop": false,
-        "enableAppSourceCop": false,
-        "enablePerTenantExtensionCop": false,
         "overrideResourceExposurePolicy": true,
         "allowDebugging": true,
         "allowDownloadingSource": false,
         "includeSourceInSymbolFile": false,
-        "applyToDevExtension": true
-      }
-    },
-    {
-      "workflows": [
-        "CICD"
-      ],
-      "settings": {
+        "applyToDevExtension": true,
+        "enableCodeCop": false,
+        "enableUICop": false,
+        "enableAppSourceCop": false,
+        "enablePerTenantExtensionCop": false,
         "workflowTrigger": {
           "batch": true,
           "branches": {
@@ -85,6 +66,18 @@
         "PublishToProd"
       ],
       "settings": {
+        "artifact": "////latest",
+        "customCodeCops": [],
+        "removeInternalsVisibleTo": true,
+        "overrideResourceExposurePolicy": true,
+        "allowDebugging": true,
+        "allowDownloadingSource": false,
+        "includeSourceInSymbolFile": false,
+        "applyToDevExtension": true,
+        "enableCodeCop": false,
+        "enableUICop": false,
+        "enableAppSourceCop": false,
+        "enablePerTenantExtensionCop": false,
         "workflowTrigger": {
           "batch": true,
           "branches": {
@@ -99,6 +92,18 @@
             ]
           }
         }
+      }
+    },
+    {
+      "workflows": [
+        "PullRequest"
+      ],
+      "settings": {
+        "artifact": "////latest",
+        "removeInternalsVisibleTo": false,
+        "customCodeCops": [
+          "https://github.com/StefanMaron/BusinessCentral.LinterCop/releases/latest/download/BusinessCentral.LinterCop.dll"
+        ]
       }
     },
     {
@@ -121,13 +126,13 @@
     },
     {
       "workflows": [
-        "TextNextMinor"
+        "TestNextMajor"
       ],
       "settings": {
-        "artifact": "////nextminor",
+        "artifact": "////nextmajor",
         "workflowSchedule": {
-          "cron": "0 2 5 * *",
-          "displayName": "Fifth of every month",
+          "cron": "0 2 15 * *",
+          "displayName": "Fifteenth of every month",
           "branches": {
             "include": [
               "main",
@@ -139,13 +144,13 @@
     },
     {
       "workflows": [
-        "TestNextMajor"
+        "TextNextMinor"
       ],
       "settings": {
-        "artifact": "////nextmajor",
+        "artifact": "////nextminor",
         "workflowSchedule": {
-          "cron": "0 2 15 * *",
-          "displayName": "Fifteenth of every month",
+          "cron": "0 2 5 * *",
+          "displayName": "Fifth of every month",
           "branches": {
             "include": [
               "main",
