@@ -1,9 +1,9 @@
 {
   "appFolders": [
-    "App"
+    "app"
   ],
   "testFolders": [
-    "Test"
+    "test"
   ],
   "enableExternalRulesets": true,
   "enableCodeCop": true,
