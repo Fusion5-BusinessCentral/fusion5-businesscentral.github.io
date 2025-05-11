@@ -63,7 +63,7 @@
     },
     {
       "workflows": [
-        "PublishToProd"
+        "PublishToProduction"
       ],
       "settings": {
         "artifact": "////latest",
