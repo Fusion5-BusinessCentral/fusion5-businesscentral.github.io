@@ -5,7 +5,17 @@ sidebar_class_name: 'nav-det-level'
 
 # Change Log
 All notable changes to this project will be documented in this file.
- 
+  
+## [2.0.0] - 2025-04-15
+  
+Available version: 25.0+
+
+### Changes
+- Internal refactoring for v24+v25 improvements.
+
+### Fixes
+- Validation of the ABN on the contact card throws an error.
+
 ## [1.2.0] - 2024-01-02
   
 Available version: 23.0+

@@ -6,7 +6,16 @@ sidebar_class_name: 'nav-det-level'
 # Change Log
 All notable changes to this project will be documented in this file.
 
-## [4.5.0] - 2025-03-10
+## [4.6.0] - 2025-05-10
+  
+Available version: 25.0+
+
+### Changes
+- Export Buffer now uses default file extension (txt) if no file extension is specified.
+- Added new implementation for **FS5A03IExportDataType** interface - **codeunit 71697649 FS5A03ExportDTText**
+- **WriteText()** in Export Buffer now threat the input as **Text (FS5A03ExportDTText)** and not **Alphanumeric**. To write alphanumeric text use **Write()** and specify required data type as the parameter.
+
+## [4.5.0] - 2025-04-01
   
 Available version: 25.0+
 
