@@ -78,6 +78,7 @@
         "enableUICop": false,
         "enableAppSourceCop": false,
         "enablePerTenantExtensionCop": false,
+        "updateVersionNumber": "+0.1",
         "workflowTrigger": {
           "batch": true,
           "branches": {
