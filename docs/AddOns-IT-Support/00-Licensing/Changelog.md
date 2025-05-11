@@ -5,8 +5,15 @@ sidebar_class_name: 'nav-det-level'
 
 # Change Log
 All notable changes to this project will be documented in this file.
-  
-## [4.1.0] - 2025-04-01
+    
+## [2500.3.20250511.120915] - 2025-05-11
+
+Available version: 25.0+
+
+### Changes
+- Improvements to Fusion5 telemetry module to log more details about the source extension.
+
+## [4.2.20250401.52214] - 2025-04-01
 
 Available version: 25.0+
 
