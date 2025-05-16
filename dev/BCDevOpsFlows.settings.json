@@ -20,6 +20,10 @@
   "pipelineFolderStructure": "Repository",
   "pipelineBranch": "test",
   "pipelineSkipFirstRun": true,
+  "preprocessorSymbols": [
+    "CLEAN25",
+    "CLEAN26"
+  ],
   "BCDevOpsFlowsPoolName": "BCDevOpsBuilds",
   "BCDevOpsFlowsPoolNameCICD": "BCDevOpsBuildsCICD",
   "BCDevOpsFlowsPoolNamePublishToProd": "BCDevOpsBuildsPublishToProd",
@@ -131,6 +135,9 @@
       ],
       "settings": {
         "artifact": "////nextmajor",
+        "preprocessorSymbols": [
+          "CLEAN27"
+        ],
         "workflowSchedule": {
           "cron": "0 2 15 * *",
           "displayName": "Fifteenth of every month",
