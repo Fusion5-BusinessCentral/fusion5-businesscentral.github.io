@@ -106,6 +106,7 @@
       "settings": {
         "artifact": "////latest",
         "removeInternalsVisibleTo": false,
+        "failOn": "Warning",
         "customCodeCops": [
           "https://github.com/StefanMaron/BusinessCentral.LinterCop/releases/latest/download/BusinessCentral.LinterCop.dll"
         ]
