@@ -31,6 +31,7 @@
   "BCDevOpsFlowsServiceConnectionName": "BCDevOpsFlowsServiceConnection",
   "BCDevOpsFlowsResourceRepositoryBranch": "preview",
   "BCDevOpsFlowsVariableGroup": "BCDevOpsFlows",
+  "runWith": "BCContainerHelper",
   "ConditionalSettings": [
     {
       "workflows": [
@@ -49,6 +50,7 @@
         "enableUICop": false,
         "enableAppSourceCop": false,
         "enablePerTenantExtensionCop": false,
+        "runWith": "NuGet",
         "workflowTrigger": {
           "batch": true,
           "branches": {
@@ -83,6 +85,7 @@
         "enableAppSourceCop": false,
         "enablePerTenantExtensionCop": false,
         "updateVersionNumber": "+0.1",
+        "runWith": "NuGet",
         "workflowTrigger": {
           "batch": true,
           "branches": {
