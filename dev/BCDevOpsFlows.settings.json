@@ -31,6 +31,7 @@
   "BCDevOpsFlowsServiceConnectionName": "BCDevOpsFlowsServiceConnection",
   "BCDevOpsFlowsResourceRepositoryBranch": "preview",
   "BCDevOpsFlowsVariableGroup": "BCDevOpsFlows",
+  "failOn": "Error",
   "runWith": "BCContainerHelper",
   "ConditionalSettings": [
     {
