@@ -125,6 +125,7 @@
         "workflowSchedule": {
           "cron": "0 2 * * 4",
           "displayName": "Every Thursday at 2am",
+          "always": true,
           "branches": {
             "include": [
               "main",
@@ -146,6 +147,7 @@
         "workflowSchedule": {
           "cron": "0 2 15 * *",
           "displayName": "Fifteenth of every month",
+          "always": true,
           "branches": {
             "include": [
               "main",
@@ -164,6 +166,7 @@
         "workflowSchedule": {
           "cron": "0 2 5 * *",
           "displayName": "Fifth of every month",
+          "always": true,
           "branches": {
             "include": [
               "main",
