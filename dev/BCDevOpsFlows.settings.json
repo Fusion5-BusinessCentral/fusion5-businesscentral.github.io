@@ -149,7 +149,7 @@
           "always": true,
           "branches": {
             "include": [
-              "tests"
+              "test"
             ]
           }
         }
