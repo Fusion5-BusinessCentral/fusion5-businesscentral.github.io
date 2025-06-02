@@ -128,8 +128,7 @@
           "always": true,
           "branches": {
             "include": [
-              "main",
-              "master"
+              "test"
             ]
           }
         }
@@ -150,8 +149,7 @@
           "always": true,
           "branches": {
             "include": [
-              "main",
-              "master"
+              "tests"
             ]
           }
         }
@@ -169,8 +167,7 @@
           "always": true,
           "branches": {
             "include": [
-              "main",
-              "master"
+              "test"
             ]
           }
         }
