@@ -33,6 +33,7 @@
   "BCDevOpsFlowsVariableGroup": "BCDevOpsFlows",
   "failOn": "Error",
   "runWith": "BCContainerHelper",
+  "recreatePipelineInSetupPipeline": true,
   "ConditionalSettings": [
     {
       "workflows": [
