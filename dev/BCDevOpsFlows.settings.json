@@ -129,9 +129,10 @@
       "settings": {
         "artifact": "////latest",
         "workflowSchedule": {
-          "cron": "0 2 * * 4",
-          "displayName": "Every Thursday at 2am",
+          "cron": "0 15 * * 3",
+          "displayName": "Every Thursday at 1 am (Brisbane time)",
           "always": true,
+          "batch": true,
           "branches": {
             "include": [
               "test"
@@ -150,9 +151,10 @@
           "CLEAN27"
         ],
         "workflowSchedule": {
-          "cron": "0 2 15 * *",
-          "displayName": "Fifteenth of every month",
+          "cron": "0 15 14 * *",
+          "displayName": "15th of every month at 1 am (Brisbane time)",
           "always": true,
+          "batch": true,
           "branches": {
             "include": [
               "test"
@@ -168,9 +170,10 @@
       "settings": {
         "artifact": "////nextminor",
         "workflowSchedule": {
-          "cron": "0 2 5 * *",
-          "displayName": "Fifth of every month",
+          "cron": "0 15 24 * *",
+          "displayName": "25th of every month at 1 am (Brisbane time)",
           "always": true,
+          "batch": true,
           "branches": {
             "include": [
               "test"
