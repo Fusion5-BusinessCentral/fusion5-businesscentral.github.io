@@ -52,6 +52,9 @@
         "enableAppSourceCop": false,
         "enablePerTenantExtensionCop": false,
         "runWith": "NuGet",
+        "preprocessorSymbols": [
+          "PRERELEASE"
+        ],
         "workflowTrigger": {
           "batch": true,
           "branches": {
@@ -111,6 +114,9 @@
         "artifact": "////latest",
         "removeInternalsVisibleTo": false,
         "failOn": "Warning",
+        "preprocessorSymbols": [
+          "PRERELEASE"
+        ],
         "customCodeCops": [
           "https://github.com/StefanMaron/BusinessCentral.LinterCop/releases/latest/download/BusinessCentral.LinterCop.dll"
         ]
