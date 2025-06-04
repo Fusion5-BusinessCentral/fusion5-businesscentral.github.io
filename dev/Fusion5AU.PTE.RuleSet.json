@@ -22,14 +22,19 @@
             "justification": "Disable: App-Source range - for app source apps only"
         },
         {
+            "id": "AS0092",
+            "action": "None",
+            "justification": "Disable: We are not using Application Insights for all project, suppress if not used."
+        },
+        {
             "id": "PTE0012",
             "action": "None",
             "justification": "Disable: Internals visible - we know how to use it... Not necessary to show the warning..."
         },
         {
-            "id": "AS0092",
-            "action": "None",
-            "justification": "Disable: We are not using Application Insights for all project, suppress if not used."
+            "id": "AW0006",
+            "action": "Warning",
+            "justification": "Set as warning: Pages and reports should use the UsageCategory and ApplicationArea properties to be searchable"
         },
         {
             "id": "LC0001",

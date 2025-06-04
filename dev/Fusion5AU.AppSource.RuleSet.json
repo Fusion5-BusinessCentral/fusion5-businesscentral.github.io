@@ -32,6 +32,11 @@
             "justification": "Disable: The InternalsVisibleTo setting will expose your internal objects to any extension..."
         },
         {
+            "id": "AW0006",
+            "action": "Warning",
+            "justification": "Set as warning: Pages and reports should use the UsageCategory and ApplicationArea properties to be searchable"
+        },
+        {
             "id": "LC0001",
             "action": "None",
             "justification": "Disable: In recent versions flowfields are not editable by default."
