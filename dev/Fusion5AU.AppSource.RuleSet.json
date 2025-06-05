@@ -2,6 +2,11 @@
     "name": "Fusion5 ruleset",
     "rules": [
         {
+            "id": "AL0792",
+            "action": "Warning",
+            "justification": "Set as warning: Unused using directive XXX."
+        },
+        {
             "id": "AA0072",
             "action": "Warning",
             "justification": "Set as warning: To improve readability the name of variables and parameters must be suffixed with the type or object name."
