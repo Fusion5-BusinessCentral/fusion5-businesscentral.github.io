@@ -21,8 +21,7 @@
   "pipelineBranch": "test",
   "pipelineSkipFirstRun": true,
   "preprocessorSymbols": [
-    "CLEAN25",
-    "CLEAN26"
+    "CLEAN25"
   ],
   "BCDevOpsFlowsPoolName": "BCDevOpsBuilds",
   "BCDevOpsFlowsPoolNameCICD": "BCDevOpsBuildsCICD",
@@ -40,7 +39,7 @@
         "CICD"
       ],
       "settings": {
-        "artifact": "////latest",
+        "artifact": "////appjson",
         "customCodeCops": [],
         "removeInternalsVisibleTo": true,
         "overrideResourceExposurePolicy": true,
@@ -54,7 +53,9 @@
         "enablePerTenantExtensionCop": false,
         "runWith": "NuGet",
         "preprocessorSymbols": [
-          "PRERELEASE"
+          "PRERELEASE",
+          "PREVIEW",
+          "TEST"
         ],
         "workflowTrigger": {
           "batch": true,
@@ -77,7 +78,7 @@
         "PublishToProduction"
       ],
       "settings": {
-        "artifact": "////latest",
+        "artifact": "////appjson",
         "customCodeCops": [],
         "removeInternalsVisibleTo": true,
         "overrideResourceExposurePolicy": true,
@@ -91,6 +92,11 @@
         "enablePerTenantExtensionCop": false,
         "updateVersionNumber": "+0.1",
         "runWith": "NuGet",
+        "ignoredPreprocessorSymbols": [
+          "PRERELEASE",
+          "PREVIEW",
+          "TEST"
+        ],
         "workflowTrigger": {
           "batch": true,
           "branches": {
@@ -112,11 +118,13 @@
         "PullRequest"
       ],
       "settings": {
-        "artifact": "////latest",
+        "artifact": "////appjson",
         "removeInternalsVisibleTo": false,
         "failOn": "Warning",
         "preprocessorSymbols": [
-          "PRERELEASE"
+          "PRERELEASE",
+          "PREVIEW",
+          "TEST"
         ],
         "customCodeCops": [
           "https://github.com/StefanMaron/BusinessCentral.LinterCop/releases/latest/download/BusinessCentral.LinterCop.dll"
@@ -129,6 +137,11 @@
       ],
       "settings": {
         "artifact": "////latest",
+        "ignoredPreprocessorSymbols": [
+          "PRERELEASE",
+          "PREVIEW",
+          "TEST"
+        ],
         "workflowSchedule": {
           "cron": "0 15 * * 3",
           "displayName": "Every Thursday at 1 am (Brisbane time)",
@@ -148,7 +161,13 @@
       ],
       "settings": {
         "artifact": "////nextmajor",
+        "ignoredPreprocessorSymbols": [
+          "PRERELEASE",
+          "PREVIEW",
+          "TEST"
+        ],
         "preprocessorSymbols": [
+          "CLEAN26",
           "CLEAN27"
         ],
         "workflowSchedule": {
@@ -170,6 +189,14 @@
       ],
       "settings": {
         "artifact": "////nextminor",
+        "ignoredPreprocessorSymbols": [
+          "PRERELEASE",
+          "PREVIEW",
+          "TEST"
+        ],
+        "preprocessorSymbols": [
+          "CLEAN26"
+        ],
         "workflowSchedule": {
           "cron": "0 15 24 * *",
           "displayName": "25th of every month at 1 am (Brisbane time)",
