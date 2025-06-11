@@ -126,9 +126,8 @@
           "PREVIEW",
           "TEST"
         ],
-        "customCodeCops": [
-          "https://github.com/StefanMaron/BusinessCentral.LinterCop/releases/latest/download/BusinessCentral.LinterCop.dll"
-        ]
+        "customCodeCops": [],
+        "enableLinterCop": true
       }
     },
     {
