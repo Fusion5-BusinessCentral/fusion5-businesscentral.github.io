@@ -34,7 +34,17 @@
   "failOn": "Error",
   "runWith": "BCContainerHelper",
   "recreatePipelineInSetupPipeline": true,
+  "allowPrerelease": true,
   "ConditionalSettings": [
+    {
+      "branches": [
+        "main",
+        "master"
+      ],
+      "settings": {
+        "allowPrerelease": false
+      }
+    },
     {
       "workflows": [
         "CICD"
