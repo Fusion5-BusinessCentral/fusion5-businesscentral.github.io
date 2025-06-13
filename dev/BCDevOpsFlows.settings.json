@@ -37,15 +37,6 @@
   "allowPrerelease": true,
   "ConditionalSettings": [
     {
-      "branches": [
-        "main",
-        "master"
-      ],
-      "settings": {
-        "allowPrerelease": false
-      }
-    },
-    {
       "workflows": [
         "CICD"
       ],
@@ -221,6 +212,15 @@
             ]
           }
         }
+      }
+    },
+    {
+      "branches": [
+        "main",
+        "master"
+      ],
+      "settings": {
+        "allowPrerelease": false
       }
     }
   ]
