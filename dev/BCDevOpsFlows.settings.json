@@ -16,7 +16,7 @@
   "cacheImageName": "",
   "writableFolderPath": "C:\\_BCFusion5Apps",
   "versioningStrategy": 2,
-  "versioningTimeOffset": 10,
+  "versioningTimeOffset": 10.0,
   "artifactUrlCacheKeepHours": 12,
   "pipelineFolderStructure": "Repository",
   "pipelineBranch": "test",
