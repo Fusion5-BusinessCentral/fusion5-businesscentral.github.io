@@ -139,6 +139,7 @@
       "settings": {
         "artifact": "////latest",
         "skipUpgrade": true,
+        "BCDevOpsFlowsPoolName": "BCDevOpsBuildsTest",
         "ignoredPreprocessorSymbols": [
           "PRERELEASE",
           "PREVIEW",
@@ -164,6 +165,7 @@
       "settings": {
         "artifact": "////nextmajor",
         "skipUpgrade": true,
+        "BCDevOpsFlowsPoolName": "BCDevOpsBuildsTest",
         "ignoredPreprocessorSymbols": [
           "PRERELEASE",
           "PREVIEW",
@@ -193,6 +195,7 @@
       "settings": {
         "artifact": "////nextminor",
         "skipUpgrade": true,
+        "BCDevOpsFlowsPoolName": "BCDevOpsBuildsTest",
         "ignoredPreprocessorSymbols": [
           "PRERELEASE",
           "PREVIEW",
