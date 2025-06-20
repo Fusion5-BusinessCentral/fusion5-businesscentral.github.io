@@ -14,6 +14,8 @@
   "overrideResourceExposurePolicy": false,
   "failPublishTestsOnFailureToPublishResults": false,
   "cacheImageName": "",
+  "cacheFolder": "D:\\bcartifacts.cache",
+  "cacheFolderOld": "C:\\bcartifacts.cache",
   "writableFolderPath": "C:\\_BCFusion5Apps",
   "versioningStrategy": 2,
   "versioningTimeOffset": 10.0,
