@@ -33,7 +33,7 @@
   "BCDevOpsFlowsVariableGroup": "BCDevOpsFlows",
   "failOn": "Error",
   "runWith": "BCContainerHelper",
-  "recreatePipelineInSetupPipeline": true,
+  "recreatePipelineInSetupPipeline": false,
   "allowPrerelease": true,
   "ConditionalSettings": [
     {
