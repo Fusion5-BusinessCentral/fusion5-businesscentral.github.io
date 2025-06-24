@@ -56,11 +56,6 @@
         "enableAppSourceCop": false,
         "enablePerTenantExtensionCop": false,
         "runWith": "NuGet",
-        "preprocessorSymbols": [
-          "PRERELEASE",
-          "PREVIEW",
-          "TEST"
-        ],
         "workflowTrigger": {
           "batch": true,
           "branches": {
@@ -125,11 +120,6 @@
         "artifact": "////appjson",
         "removeInternalsVisibleTo": false,
         "failOn": "Warning",
-        "preprocessorSymbols": [
-          "PRERELEASE",
-          "PREVIEW",
-          "TEST"
-        ],
         "customCodeCops": [],
         "enableLinterCop": true
       }
@@ -225,7 +215,26 @@
         "master"
       ],
       "settings": {
-        "allowPrerelease": false
+        "allowPrerelease": false,
+        "ignoredPreprocessorSymbols": [
+          "PRERELEASE",
+          "PREVIEW",
+          "TEST"
+        ]
+      }
+    },
+    {
+      "branches": [
+        "test",
+        "preview"
+      ],
+      "settings": {
+        "allowPrerelease": true,
+        "preprocessorSymbols": [
+          "PRERELEASE",
+          "PREVIEW",
+          "TEST"
+        ]
       }
     }
   ]
