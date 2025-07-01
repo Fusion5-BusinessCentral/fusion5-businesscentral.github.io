@@ -29,7 +29,7 @@
   "BCDevOpsFlowsPoolName": "BCDevOpsBuilds",
   "BCDevOpsFlowsPoolNameCICD": "BCDevOpsBuildsCICD",
   "BCDevOpsFlowsPoolNamePublishToProd": "BCDevOpsBuildsPublishToProd",
-  "BCDevOpsFlowsResourceRepositoryName": "TKapitan/BCDevOpsFlows",
+  "BCDevOpsFlowsResourceRepositoryName": "BC-AU/BCDevOpsFlows",
   "BCDevOpsFlowsServiceConnectionName": "BCDevOpsFlowsServiceConnection",
   "BCDevOpsFlowsResourceRepositoryBranch": "preview",
   "BCDevOpsFlowsVariableGroup": "BCDevOpsFlows",
