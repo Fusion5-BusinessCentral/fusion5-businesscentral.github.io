@@ -33,6 +33,7 @@
   "BCDevOpsFlowsServiceConnectionName": "BCDevOpsFlowsServiceConnection",
   "BCDevOpsFlowsResourceRepositoryBranch": "preview",
   "BCDevOpsFlowsVariableGroup": "BCDevOpsFlows",
+  "hybridDeploymentGitHubRepoSCId": "91e71379-c69a-4bce-863c-a8c366d52151",
   "failOn": "Error",
   "runWith": "BCContainerHelper",
   "recreatePipelineInSetupPipeline": false,
