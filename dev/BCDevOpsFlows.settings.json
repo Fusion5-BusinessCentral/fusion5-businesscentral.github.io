@@ -122,7 +122,24 @@
         "removeInternalsVisibleTo": false,
         "failOn": "Warning",
         "customCodeCops": [],
-        "enableLinterCop": true
+        "enableLinterCop": true,
+        "workflowPRTrigger": {
+          "autoCancel": true,
+          "drafts": false,
+          "branches": {
+            "include": [
+              "test",
+              "preview",
+              "main",
+              "master"
+            ]
+          },
+          "paths": {
+            "include": [
+              "*.al"
+            ]
+          }
+        }
       }
     },
     {
