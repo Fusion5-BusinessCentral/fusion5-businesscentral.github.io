@@ -10,6 +10,7 @@
   "enableUICop": true,
   "enableAppSourceCop": true,
   "enablePerTenantExtensionCop": true,
+  "updateAppSourceCop": false,
   "removeInternalsVisibleTo": false,
   "overrideResourceExposurePolicy": false,
   "failPublishTestsOnFailureToPublishResults": false,
@@ -92,6 +93,7 @@
         "enableUICop": false,
         "enableAppSourceCop": false,
         "enablePerTenantExtensionCop": false,
+  "updateAppSourceCop": false,
         "updateVersionNumber": "+0.1",
         "runWith": "NuGet",
         "ignoredPreprocessorSymbols": [
