@@ -93,7 +93,7 @@
         "enableUICop": false,
         "enableAppSourceCop": false,
         "enablePerTenantExtensionCop": false,
-  "updateAppSourceCop": false,
+        "updateAppSourceCop": true,
         "updateVersionNumber": "+0.1",
         "runWith": "NuGet",
         "ignoredPreprocessorSymbols": [
