@@ -27,7 +27,8 @@
   "pipelineSkipFirstRun": true,
   "preprocessorSymbols": [
     "CLEAN25",
-    "CLEAN26"
+    "CLEAN26",
+    "PUBLICRELEASE"
   ],
   "BCDevOpsFlowsPoolName": "BCDevOpsBuilds",
   "BCDevOpsFlowsPoolNameCICD": "BCDevOpsBuildsCICD",
