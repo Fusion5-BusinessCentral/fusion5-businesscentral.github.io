@@ -27,8 +27,7 @@
   "pipelineSkipFirstRun": true,
   "preprocessorSymbols": [
     "CLEAN25",
-    "CLEAN26",
-    "PUBLICRELEASE"
+    "CLEAN26"
   ],
   "BCDevOpsFlowsPoolName": "BCDevOpsBuilds",
   "BCDevOpsFlowsPoolNameCICD": "BCDevOpsBuildsCICD",
@@ -61,6 +60,9 @@
         "enableAppSourceCop": false,
         "enablePerTenantExtensionCop": false,
         "runWith": "NuGet",
+        "preprocessorSymbols": [
+          "PUBLICRELEASE"
+        ],
         "workflowTrigger": {
           "batch": true,
           "branches": {
@@ -101,6 +103,9 @@
           "PRERELEASE",
           "PREVIEW",
           "TEST"
+        ],
+        "preprocessorSymbols": [
+          "PUBLICRELEASE"
         ],
         "workflowTrigger": {
           "batch": true,
