@@ -5,6 +5,9 @@
   "testFolders": [
     "test"
   ],
+  "installTestAppsNuGet": [
+    "Fusion5Limited.Fusion5TestLibraries.415e3624-eb12-4d36-8b9e-1e5baec144be"
+  ],
   "enableExternalRulesets": true,
   "enableCodeCop": true,
   "enableUICop": true,
@@ -41,6 +44,7 @@
   "runWith": "BCContainerHelper",
   "recreatePipelineInSetupPipeline": false,
   "allowPrerelease": true,
+  "generateCountryPreprocessorSymbols": true,
   "ConditionalSettings": [
     {
       "workflows": [
