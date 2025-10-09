@@ -490,6 +490,21 @@
             "id": "LC0091",
             "action": "None",
             "justification": "Disable: Labels should be translated."
+        },
+        {
+            "id": "LC0092",
+            "action": "Warning",
+            "justification": "Warning: Names must match the allowed pattern and must not match the disallowed pattern."
+        },
+        {
+            "id": "LC0093",
+            "action": "None",
+            "justification": "Disable: Global procedure in test codeunit requires test attribute."
+        },
+        {
+            "id": "LC0094",
+            "action": "None",
+            "justification": "Disable: UNDOCUMENTED RULE"
         }
     ]
 }
