@@ -30,7 +30,8 @@
   "pipelineSkipFirstRun": true,
   "preprocessorSymbols": [
     "CLEAN25",
-    "CLEAN26"
+    "CLEAN26",
+    "CLEAN27"
   ],
   "BCDevOpsFlowsPoolName": "BCDevOpsBuilds",
   "BCDevOpsFlowsPoolNameCICD": "BCDevOpsBuildsCICD",
@@ -168,18 +169,7 @@
           "PRERELEASE",
           "PREVIEW",
           "TEST"
-        ],
-        "workflowSchedule": {
-          "cron": "0 15 * * 3",
-          "displayName": "Every Thursday at 1 am (Brisbane time)",
-          "always": true,
-          "batch": true,
-          "branches": {
-            "include": [
-              "test"
-            ]
-          }
-        }
+        ]
       }
     },
     {
@@ -199,19 +189,9 @@
           "CLEAN24",
           "CLEAN25",
           "CLEAN26",
-          "CLEAN27"
-        ],
-        "workflowSchedule": {
-          "cron": "0 15 14 * *",
-          "displayName": "15th of every month at 1 am (Brisbane time)",
-          "always": true,
-          "batch": true,
-          "branches": {
-            "include": [
-              "test"
-            ]
-          }
-        }
+          "CLEAN27",
+          "CLEAN28"
+        ]
       }
     },
     {
@@ -230,19 +210,9 @@
         "preprocessorSymbols": [
           "CLEAN24",
           "CLEAN25",
-          "CLEAN26"
-        ],
-        "workflowSchedule": {
-          "cron": "0 15 24 * *",
-          "displayName": "25th of every month at 1 am (Brisbane time)",
-          "always": true,
-          "batch": true,
-          "branches": {
-            "include": [
-              "test"
-            ]
-          }
-        }
+          "CLEAN26",
+          "CLEAN27"
+        ]
       }
     },
     {
