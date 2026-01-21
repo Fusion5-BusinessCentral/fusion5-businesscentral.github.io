@@ -46,6 +46,7 @@
   "recreatePipelineInSetupPipeline": false,
   "allowPrerelease": true,
   "generateCountryPreprocessorSymbols": true,
+  "vsixFile": "latest",
   "ConditionalSettings": [
     {
       "workflows": [
@@ -180,6 +181,7 @@
         "artifact": "////nextmajor",
         "skipUpgrade": true,
         "BCDevOpsFlowsPoolName": "BCDevOpsBuildsTest",
+        "vsixFile": "preview",
         "ignoredPreprocessorSymbols": [
           "PRERELEASE",
           "PREVIEW",
