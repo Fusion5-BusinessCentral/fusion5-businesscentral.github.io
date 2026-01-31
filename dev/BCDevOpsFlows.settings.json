@@ -30,8 +30,7 @@
   "pipelineSkipFirstRun": true,
   "preprocessorSymbols": [
     "CLEAN25",
-    "CLEAN26",
-    "CLEAN27"
+    "CLEAN26"
   ],
   "BCDevOpsFlowsPoolName": "BCDevOpsBuilds",
   "BCDevOpsFlowsPoolNameCICD": "BCDevOpsBuildsCICD",
@@ -40,6 +39,10 @@
   "BCDevOpsFlowsServiceConnectionName": "BCDevOpsFlowsServiceConnection",
   "BCDevOpsFlowsResourceRepositoryBranch": "preview",
   "BCDevOpsFlowsVariableGroup": "BCDevOpsFlows",
+  "BCDevOpsFlowsVariableGroups": [
+    "BCDevOpsFlows",
+    "BCDevOpsFlowsKeyVault"
+  ],
   "hybridDeploymentGitHubRepoSCId": "91e71379-c69a-4bce-863c-a8c366d52151",
   "failOn": "Error",
   "runWith": "BCContainerHelper",
@@ -170,6 +173,9 @@
           "PRERELEASE",
           "PREVIEW",
           "TEST"
+        ],
+        "preprocessorSymbols": [
+          "CLEAN27"
         ]
       }
     },
