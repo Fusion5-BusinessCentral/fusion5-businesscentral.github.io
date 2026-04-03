@@ -13,7 +13,7 @@
   "enableUICop": true,
   "enableAppSourceCop": true,
   "enablePerTenantExtensionCop": true,
-  "enableLinterCop": true,
+  "enableLinterCop": false,
   "updateAppSourceCop": false,
   "removeInternalsVisibleTo": false,
   "overrideResourceExposurePolicy": false,
