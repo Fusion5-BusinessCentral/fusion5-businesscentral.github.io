@@ -7,6 +7,11 @@
       "justification": "Internal accessibility"
     },
     {
+      "id": "AL1080",
+      "action": "None",
+      "justification": "Disable: Source will still be visible for this extension via debugging because allowDebugging has been set to true."
+    },
+    {
       "id": "AA0139",
       "action": "None",
       "justification": "Short text"

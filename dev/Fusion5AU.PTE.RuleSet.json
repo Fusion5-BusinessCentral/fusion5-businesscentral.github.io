@@ -7,6 +7,11 @@
             "justification": "Set as warning: Unused using directive XXX."
         },
         {
+            "id": "AL1080",
+            "action": "None",
+            "justification": "Disable: Source will still be visible for this extension via debugging because allowDebugging has been set to true."
+        },
+        {
             "id": "AA0072",
             "action": "Warning",
             "justification": "Set as warning: To improve readability the name of variables and parameters must be suffixed with the type or object name."
