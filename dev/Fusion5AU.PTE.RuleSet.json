@@ -505,6 +505,341 @@
             "id": "LC0094",
             "action": "None",
             "justification": "Disable: UNDOCUMENTED RULE"
+        },
+        {
+            "id": "PC0001",
+            "action": "None",
+            "justification": "ALCops mapping from LC0001: Disable: In recent versions flowfields are not editable by default."
+        },
+        {
+            "id": "DC0001",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0002: Set as warning: Commit() needs a comment to justify its existence. Either a leading or a trailing comment"
+        },
+        {
+            "id": "AC0001",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0004: Set as warning: Property LookupPageID and DrilldownPageID must be filled in table because it is used in list page."
+        },
+        {
+            "id": "FC0002",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0005: Set as warning: Wrong casing detected."
+        },
+        {
+            "id": "PC0002",
+            "action": "Error",
+            "justification": "ALCops mapping from LC0006: Set as error: Set as warning: AutoIncrement fields are not possible in temporary tables."
+        },
+        {
+            "id": "AC0008",
+            "action": "None",
+            "justification": "ALCops mapping from LC0007: Disable: DataPerCompany is missing."
+        },
+        {
+            "id": "PC0003",
+            "action": "Error",
+            "justification": "ALCops mapping from LC0008: Set as error: Filter operators should not be used in SetRange. Use SetFilter instead."
+        },
+        {
+            "id": "PC0006",
+            "action": "None",
+            "justification": "ALCops mapping from LC0011: Disable: Access property is missing."
+        },
+        {
+            "id": "AC0002",
+            "action": "Error",
+            "justification": "ALCops mapping from LC0013: Set as error: NotBlank should be set explicitly for tables with a single-field primary key.."
+        },
+        {
+            "id": "AC0009",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0014: Set as warning: The Caption of permissionset objects should not exceed the maximum length."
+        },
+        {
+            "id": "AC0010",
+            "action": "None",
+            "justification": "ALCops mapping from LC0015: We are using only TableData permissions."
+        },
+        {
+            "id": "AC0011",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0016: Set as warning: Caption is missing."
+        },
+        {
+            "id": "DC0002",
+            "action": "Error",
+            "justification": "ALCops mapping from LC0017: Set as error: Writing to a FlowField is not common. Add a comment to explain this."
+        },
+        {
+            "id": "AC0012",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0018: Set as warning: Events in internal codeunits are not accessible to extensions and should therefore be avoided."
+        },
+        {
+            "id": "AC0004",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0021: Set as warning: Confirm() must be implemented through the 'Confirm Management' codeunit from the System Application."
+        },
+        {
+            "id": "AC0005",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0022: Set as warning: GlobalLanguage() must be implemented through the 'Translation Helper' codeunit from the Base Application."
+        },
+        {
+            "id": "AC0013",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0023: Set as warning: Fieldgroup '{0}' is missing on table '{1}'."
+        },
+        {
+            "id": "FC0001",
+            "action": "None",
+            "justification": "ALCops mapping from LC0024: We do not use semicolon at the end of the procedure definition."
+        },
+        {
+            "id": "DC0004",
+            "action": "None",
+            "justification": "ALCops mapping from LC0025: Disable: Procedure must be either local, internal or define a documentation comment."
+        },
+        {
+            "id": "AC0014",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0026: Set as warning: ToolTip must end with a dot."
+        },
+        {
+            "id": "AC0006",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0027: Set as warning: Utilize the 'Page Management' codeunit for launching page."
+        },
+        {
+            "id": "AC0007",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0030: Set as warning: Set Access property to Internal for Install/Upgrade codeunits."
+        },
+        {
+            "id": "PC0016",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0032: Set as warning: Clear(All) does not affect or change values for global variables in '{0}: Codeunit {1}'."
+        },
+        {
+            "id": "PC0005",
+            "action": "None",
+            "justification": "ALCops mapping from LC0034: Disable: The property Extensible should be explicitly set for {0} objects."
+        },
+        {
+            "id": "AC0026",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0035: Set as warning: Explicitly set AllowInCustomizations for fields omitted on pages."
+        },
+        {
+            "id": "AC0015",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0036: Set as warning: ToolTip must start with the verb 'Specifies'."
+        },
+        {
+            "id": "AC0016",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0037: Set as warning: Do not use line breaks in ToolTip."
+        },
+        {
+            "id": "AC0017",
+            "action": "None",
+            "justification": "ALCops mapping from LC0038: If we have longer tooltip, it has reason."
+        },
+        {
+            "id": "PC0017",
+            "action": "Error",
+            "justification": "ALCops mapping from LC0039: Set as error: Argument {0}: cannot convert from {1} to {2}."
+        },
+        {
+            "id": "AC0018",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0041: Set as warning: Empty captions should be locked."
+        },
+        {
+            "id": "PC0007",
+            "action": "Error",
+            "justification": "ALCops mapping from LC0042: Set as error: The SetAutoCalcFields method should only be used with FlowFields or fields of type Blob. The field {0} is not a FlowField or of type Blob."
+        },
+        {
+            "id": "PC0020",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0044: Set as warning: Records '{0}' and '{1}' have conflicting fields with the same ID."
+        },
+        {
+            "id": "PC0021",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0044: Set as warning: Records '{0}' and '{1}' have conflicting fields with the same ID."
+        },
+        {
+            "id": "AC0019",
+            "action": "None",
+            "justification": "ALCops mapping from LC0045: Disable: We know that 0 enum value should be used for blank value. If we have different value, it is by design."
+        },
+        {
+            "id": "AC0020",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0046: Set as warning: Label with suffix Tok must be locked."
+        },
+        {
+            "id": "AC0021",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0047: Set as warning: Locked Label must have a suffix Tok."
+        },
+        {
+            "id": "PC0018",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0049: Set as warning: SourceTable property not defined on {0} '{1}'."
+        },
+        {
+            "id": "PC0008",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0050: Set as warning: Found operator '{0}' together with placeholder '{1}' in filter expression, which results in unexpected behavior. Use the StrSubstNo() method to circumvent this.."
+        },
+        {
+            "id": "PC0022",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0051: Set as warning: Do not assign a text to a target with smaller size."
+        },
+        {
+            "id": "AC0027",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0055: Set as warning: The suffix 'Tok' is meant to be used when the value of the label matches the name."
+        },
+        {
+            "id": "AC0022",
+            "action": "Error",
+            "justification": "ALCops mapping from LC0056: Set as error: Empty Enum values should not have a specified Caption property."
+        },
+        {
+            "id": "AC0023",
+            "action": "Error",
+            "justification": "ALCops mapping from LC0057: Set as error: Enum values must have non-empty a Caption to be selectable in the client."
+        },
+        {
+            "id": "PC0019",
+            "action": "Error",
+            "justification": "ALCops mapping from LC0059: Set as error: Single quote escaping issue detected."
+        },
+        {
+            "id": "PC0024",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0060: Set as warning: The ApplicationArea property is not applicable to API pages."
+        },
+        {
+            "id": "PC0025",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0061: Set as warning: Pages of type API must have the ODataKeyFields property set to the SystemId field."
+        },
+        {
+            "id": "PC0026",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0062: Set as warning: Mandatory field is missing on API page."
+        },
+        {
+            "id": "AC0028",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0064: Set as warning: Missing ToolTip property on table field."
+        },
+        {
+            "id": "PC0010",
+            "action": "None",
+            "justification": "ALCops mapping from LC0065: Set as warning: Event subscriber var keyword mismatch."
+        },
+        {
+            "id": "AC0029",
+            "action": "None",
+            "justification": "ALCops mapping from LC0066: Set as warning: Duplicate ToolTip between page and table field."
+        },
+        {
+            "id": "AC0003",
+            "action": "Error",
+            "justification": "ALCops mapping from LC0067: Error: Set NotBlank property to false when 'No. Series' TableRelation exists."
+        },
+        {
+            "id": "AC0031",
+            "action": "None",
+            "justification": "ALCops mapping from LC0068: Disable: The current object is missing indirect permissions permissions."
+        },
+        {
+            "id": "DC0003",
+            "action": "None",
+            "justification": "ALCops mapping from LC0069: Disable: Empty statements should be avoided or should have a leading or trailing comment explaining their use."
+        },
+        {
+            "id": "PC0004",
+            "action": "Error",
+            "justification": "ALCops mapping from LC0070: Error: Zero index access on 1-based List objects."
+        },
+        {
+            "id": "PC0023",
+            "action": "Error",
+            "justification": "ALCops mapping from LC0071: Error: Incorrect 'IsHandled' parameter assignment."
+        },
+        {
+            "id": "DC0005",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0072: Warning: The documentation comment must match the procedure syntax."
+        },
+        {
+            "id": "PC0011",
+            "action": "Error",
+            "justification": "ALCops mapping from LC0073: Error: Handled parameters in event signatures should be passed by var."
+        },
+        {
+            "id": "PC0012",
+            "action": "Error",
+            "justification": "ALCops mapping from LC0074: Error: Set values for FlowFilter fields using filtering methods."
+        },
+        {
+            "id": "PC0013",
+            "action": "Error",
+            "justification": "ALCops mapping from LC0075: Error: Incorrect number or type of arguments in .Get() method on Record object."
+        },
+        {
+            "id": "PC0028",
+            "action": "Error",
+            "justification": "ALCops mapping from LC0076: Error: The field with table relation should have at least the same length as the referenced field."
+        },
+        {
+            "id": "FC0003",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0077: Warning: Methods should always be called with parenthesis."
+        },
+        {
+            "id": "PC0027",
+            "action": "Error",
+            "justification": "ALCops mapping from LC0078: Error: Temporary records should not trigger table triggers."
+        },
+        {
+            "id": "AC0024",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0079: Warning: Event publishers should not be public."
+        },
+        {
+            "id": "PC0014",
+            "action": "Error",
+            "justification": "ALCops mapping from LC0080: Error: Replace double quotes in JPath expressions with two single quotes."
+        },
+        {
+            "id": "AC0030",
+            "action": "None",
+            "justification": "ALCops mapping from LC0084: Disable: Use return value for better error handling."
+        },
+        {
+            "id": "AC0025",
+            "action": "Warning",
+            "justification": "ALCops mapping from LC0085: Warning: Use the (CR)LFSeparator from the Type Helper codeunit."
+        },
+        {
+            "id": "PC0015",
+            "action": "Error",
+            "justification": "ALCops mapping from LC0087: Error: Use IsNullGuid() to check for empty GUID values."
+        },
+        {
+            "id": "TA0001",
+            "action": "None",
+            "justification": "ALCops mapping from LC0093: Disable: Global procedure in test codeunit requires test attribute."
         }
     ]
 }
