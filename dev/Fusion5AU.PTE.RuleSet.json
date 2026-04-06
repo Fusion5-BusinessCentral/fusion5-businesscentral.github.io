@@ -513,8 +513,8 @@
         },
         {
             "id": "LC0094",
-            "action": "None",
-            "justification": "Disable: UNDOCUMENTED RULE"
+            "action": "Warning",
+            "justification": "Warning: AllowInCustomizations redundancy"
         },
         {
             "id": "PC0001",
@@ -753,13 +753,13 @@
         },
         {
             "id": "PC0010",
-            "action": "None",
-            "justification": "ALCops mapping from LC0065: Set as warning: Event subscriber var keyword mismatch."
+            "action": "Error",
+            "justification": "Error: Event subscriber var keyword mismatch."
         },
         {
             "id": "AC0029",
-            "action": "None",
-            "justification": "ALCops mapping from LC0066: Set as warning: Duplicate ToolTip between page and table field."
+            "action": "Warning",
+            "justification": "Warning: Duplicate ToolTip between page and table field."
         },
         {
             "id": "AC0003",
