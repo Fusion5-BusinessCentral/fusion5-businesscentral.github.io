@@ -7,6 +7,11 @@
       "justification": "Disable: Source will still be visible for this extension via debugging because allowDebugging has been set to true."
     },
     {
+      "id": "AA0237",
+      "action": "None",
+      "justification": "Disable UNTIL v29: Temp must not be used with non temporary records."
+    },
+    {
       "id": "AA0247",
       "action": "None",
       "justification": "Disable: Use namespaces to organize your code and isolate it from changes."

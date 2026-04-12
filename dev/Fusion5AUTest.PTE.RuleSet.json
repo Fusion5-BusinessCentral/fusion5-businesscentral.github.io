@@ -47,6 +47,11 @@
       "justification": "StrSubstNo with text concatenation"
     },
     {
+      "id": "AA0237",
+      "action": "None",
+      "justification": "Disable UNTIL v29: Temp must not be used with non temporary records."
+    },
+    {
       "id": "AA0247",
       "action": "None",
       "justification": "Disable: Use namespaces to organize your code and isolate it from changes."
