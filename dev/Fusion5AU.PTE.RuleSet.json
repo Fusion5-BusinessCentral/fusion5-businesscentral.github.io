@@ -373,12 +373,12 @@
         },
         {
             "id": "LC0065",
-            "action": "None",
+            "action": "Warning",
             "justification": "Set as warning: Event subscriber var keyword mismatch."
         },
         {
             "id": "LC0066",
-            "action": "None",
+            "action": "Warning",
             "justification": "Set as warning: Duplicate ToolTip between page and table field."
         },
         {
