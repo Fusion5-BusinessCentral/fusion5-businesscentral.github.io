@@ -31,7 +31,8 @@
   "pipelineSkipFirstRun": true,
   "preprocessorSymbols": [
     "CLEAN25",
-    "CLEAN26"
+    "CLEAN26",
+    "CLEAN27"
   ],
   "BCDevOpsFlowsPoolName": "BCDevOpsBuilds",
   "BCDevOpsFlowsPoolNameCICD": "BCDevOpsBuildsCICD",
@@ -148,8 +149,8 @@
         "enableALCopsFormattingCop": true,
         "enableALCopsPlatformCop": true,
         "workflowPRTrigger": {
-          "autoCancel": true,
-          "drafts": false,
+          "autoCancel": false,
+          "drafts": true,
           "branches": {
             "include": [
               "test",
