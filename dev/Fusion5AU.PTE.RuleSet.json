@@ -852,6 +852,11 @@
             "justification": "ALCops mapping from LC0087: Error: Use IsNullGuid() to check for empty GUID values."
         },
         {
+            "id": "PC0037",
+            "action": "Info",
+            "justification": "Set only as info: Use Validate() instead of directly assigning a value to a field to ensure that the business logic in the field's OnValidate trigger is executed."
+        },
+        {
             "id": "TA0001",
             "action": "None",
             "justification": "ALCops mapping from LC0093: Disable: Global procedure in test codeunit requires test attribute."
